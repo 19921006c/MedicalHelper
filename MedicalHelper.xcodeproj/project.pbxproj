@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		4246FCC21D5B1F4200CB9199 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4246FCC11D5B1F4200CB9199 /* AppDelegate.swift */; };
-		4246FCC41D5B1F4200CB9199 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4246FCC31D5B1F4200CB9199 /* ViewController.swift */; };
-		4246FCC71D5B1F4200CB9199 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4246FCC51D5B1F4200CB9199 /* Main.storyboard */; };
 		4246FCC91D5B1F4200CB9199 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4246FCC81D5B1F4200CB9199 /* Assets.xcassets */; };
-		4246FCCC1D5B1F4200CB9199 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4246FCCA1D5B1F4200CB9199 /* LaunchScreen.storyboard */; };
 		4246FCD71D5B1F4200CB9199 /* MedicalHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4246FCD61D5B1F4200CB9199 /* MedicalHelperTests.swift */; };
 		4246FCE21D5B1F4200CB9199 /* MedicalHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4246FCE11D5B1F4200CB9199 /* MedicalHelperUITests.swift */; };
+		4246FCF71D5B259800CB9199 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4246FCF61D5B259800CB9199 /* MainTabBarController.swift */; };
+		4246FCF91D5B25AE00CB9199 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4246FCF81D5B25AE00CB9199 /* MainNavigationController.swift */; };
+		4246FCFB1D5B261E00CB9199 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4246FCFA1D5B261E00CB9199 /* Common.swift */; };
+		4246FCFD1D5B27CE00CB9199 /* NewVersionTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4246FCFC1D5B27CE00CB9199 /* NewVersionTool.swift */; };
+		4246FD041D5B2A9A00CB9199 /* NewVersionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4246FD021D5B2A9A00CB9199 /* NewVersionViewController.swift */; };
+		4246FD051D5B2A9A00CB9199 /* NewVersionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4246FD031D5B2A9A00CB9199 /* NewVersionViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +39,7 @@
 /* Begin PBXFileReference section */
 		4246FCBE1D5B1F4200CB9199 /* MedicalHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicalHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4246FCC11D5B1F4200CB9199 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4246FCC31D5B1F4200CB9199 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4246FCC61D5B1F4200CB9199 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4246FCC81D5B1F4200CB9199 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4246FCCB1D5B1F4200CB9199 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4246FCCD1D5B1F4200CB9199 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4246FCD21D5B1F4200CB9199 /* MedicalHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedicalHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4246FCD61D5B1F4200CB9199 /* MedicalHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalHelperTests.swift; sourceTree = "<group>"; };
@@ -47,6 +47,12 @@
 		4246FCDD1D5B1F4200CB9199 /* MedicalHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedicalHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4246FCE11D5B1F4200CB9199 /* MedicalHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalHelperUITests.swift; sourceTree = "<group>"; };
 		4246FCE31D5B1F4200CB9199 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4246FCF61D5B259800CB9199 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		4246FCF81D5B25AE00CB9199 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		4246FCFA1D5B261E00CB9199 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		4246FCFC1D5B27CE00CB9199 /* NewVersionTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewVersionTool.swift; sourceTree = "<group>"; };
+		4246FD021D5B2A9A00CB9199 /* NewVersionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewVersionViewController.swift; sourceTree = "<group>"; };
+		4246FD031D5B2A9A00CB9199 /* NewVersionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewVersionViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				4246FCC11D5B1F4200CB9199 /* AppDelegate.swift */,
-				4246FCC31D5B1F4200CB9199 /* ViewController.swift */,
-				4246FCC51D5B1F4200CB9199 /* Main.storyboard */,
+				4246FCEF1D5B256000CB9199 /* Common */,
+				4246FCF01D5B256000CB9199 /* Home */,
+				4246FCF11D5B256000CB9199 /* Main */,
+				4246FCF21D5B256000CB9199 /* Order */,
+				4246FCF31D5B256000CB9199 /* Profile */,
+				4246FCF41D5B256000CB9199 /* Rank */,
+				4246FCF51D5B256000CB9199 /* Tool */,
 				4246FCC81D5B1F4200CB9199 /* Assets.xcassets */,
-				4246FCCA1D5B1F4200CB9199 /* LaunchScreen.storyboard */,
 				4246FCCD1D5B1F4200CB9199 /* Info.plist */,
 			);
 			path = MedicalHelper;
@@ -123,6 +133,68 @@
 				4246FCE31D5B1F4200CB9199 /* Info.plist */,
 			);
 			path = MedicalHelperUITests;
+			sourceTree = "<group>";
+		};
+		4246FCEF1D5B256000CB9199 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Common;
+			path = Classes/Common;
+			sourceTree = "<group>";
+		};
+		4246FCF01D5B256000CB9199 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Home;
+			path = Classes/Home;
+			sourceTree = "<group>";
+		};
+		4246FCF11D5B256000CB9199 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4246FCF61D5B259800CB9199 /* MainTabBarController.swift */,
+				4246FCF81D5B25AE00CB9199 /* MainNavigationController.swift */,
+				4246FD021D5B2A9A00CB9199 /* NewVersionViewController.swift */,
+				4246FD031D5B2A9A00CB9199 /* NewVersionViewController.xib */,
+			);
+			name = Main;
+			path = Classes/Main;
+			sourceTree = "<group>";
+		};
+		4246FCF21D5B256000CB9199 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Order;
+			path = Classes/Order;
+			sourceTree = "<group>";
+		};
+		4246FCF31D5B256000CB9199 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Profile;
+			path = Classes/Profile;
+			sourceTree = "<group>";
+		};
+		4246FCF41D5B256000CB9199 /* Rank */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Rank;
+			path = Classes/Rank;
+			sourceTree = "<group>";
+		};
+		4246FCF51D5B256000CB9199 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				4246FCFA1D5B261E00CB9199 /* Common.swift */,
+				4246FCFC1D5B27CE00CB9199 /* NewVersionTool.swift */,
+			);
+			name = Tool;
+			path = Classes/Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +301,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4246FCCC1D5B1F4200CB9199 /* LaunchScreen.storyboard in Resources */,
+				4246FD051D5B2A9A00CB9199 /* NewVersionViewController.xib in Resources */,
 				4246FCC91D5B1F4200CB9199 /* Assets.xcassets in Resources */,
-				4246FCC71D5B1F4200CB9199 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +327,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4246FCC41D5B1F4200CB9199 /* ViewController.swift in Sources */,
+				4246FD041D5B2A9A00CB9199 /* NewVersionViewController.swift in Sources */,
+				4246FCFB1D5B261E00CB9199 /* Common.swift in Sources */,
+				4246FCFD1D5B27CE00CB9199 /* NewVersionTool.swift in Sources */,
+				4246FCF91D5B25AE00CB9199 /* MainNavigationController.swift in Sources */,
+				4246FCF71D5B259800CB9199 /* MainTabBarController.swift in Sources */,
 				4246FCC21D5B1F4200CB9199 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,25 +366,6 @@
 			targetProxy = 4246FCDE1D5B1F4200CB9199 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		4246FCC51D5B1F4200CB9199 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4246FCC61D5B1F4200CB9199 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4246FCCA1D5B1F4200CB9199 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4246FCCB1D5B1F4200CB9199 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4246FCE41D5B1F4200CB9199 /* Debug */ = {
@@ -399,10 +455,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MedicalHelper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = joe.MedicalHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -410,10 +469,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MedicalHelper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = joe.MedicalHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -482,6 +544,7 @@
 				4246FCE81D5B1F4200CB9199 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4246FCE91D5B1F4200CB9199 /* Build configuration list for PBXNativeTarget "MedicalHelperTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +553,7 @@
 				4246FCEB1D5B1F4200CB9199 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4246FCEC1D5B1F4200CB9199 /* Build configuration list for PBXNativeTarget "MedicalHelperUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +562,7 @@
 				4246FCEE1D5B1F4200CB9199 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
