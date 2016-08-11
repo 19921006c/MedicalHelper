@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4229CE0D1D5C4C3F0086B035 /* HomeCarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4229CE0B1D5C4C3F0086B035 /* HomeCarouselCell.swift */; };
+		4229CE0E1D5C4C3F0086B035 /* HomeCarouselCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4229CE0C1D5C4C3F0086B035 /* HomeCarouselCell.xib */; };
+		4229CE111D5C4F490086B035 /* HomeTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4229CE101D5C4F490086B035 /* HomeTableViewHeaderView.swift */; };
+		4229CE131D5C4FB20086B035 /* HomeTableViewHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4229CE121D5C4FB20086B035 /* HomeTableViewHeaderView.xib */; };
 		4246FCC21D5B1F4200CB9199 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4246FCC11D5B1F4200CB9199 /* AppDelegate.swift */; };
 		4246FCC91D5B1F4200CB9199 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4246FCC81D5B1F4200CB9199 /* Assets.xcassets */; };
 		4246FCD71D5B1F4200CB9199 /* MedicalHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4246FCD61D5B1F4200CB9199 /* MedicalHelperTests.swift */; };
@@ -47,6 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4229CE0B1D5C4C3F0086B035 /* HomeCarouselCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeCarouselCell.swift; path = ../HomeCarouselCell.swift; sourceTree = "<group>"; };
+		4229CE0C1D5C4C3F0086B035 /* HomeCarouselCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeCarouselCell.xib; path = ../HomeCarouselCell.xib; sourceTree = "<group>"; };
+		4229CE101D5C4F490086B035 /* HomeTableViewHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewHeaderView.swift; sourceTree = "<group>"; };
+		4229CE121D5C4FB20086B035 /* HomeTableViewHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewHeaderView.xib; sourceTree = "<group>"; };
 		4246FCBE1D5B1F4200CB9199 /* MedicalHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicalHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4246FCC11D5B1F4200CB9199 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4246FCC81D5B1F4200CB9199 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,6 +108,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4229CE0F1D5C4D530086B035 /* HomeCell */ = {
+			isa = PBXGroup;
+			children = (
+				4229CE0B1D5C4C3F0086B035 /* HomeCarouselCell.swift */,
+				4229CE0C1D5C4C3F0086B035 /* HomeCarouselCell.xib */,
+				4229CE101D5C4F490086B035 /* HomeTableViewHeaderView.swift */,
+				4229CE121D5C4FB20086B035 /* HomeTableViewHeaderView.xib */,
+			);
+			path = HomeCell;
+			sourceTree = "<group>";
+		};
 		4246FCB51D5B1F4200CB9199 = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +185,7 @@
 		4246FCF01D5B256000CB9199 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				4229CE0F1D5C4D530086B035 /* HomeCell */,
 				424C7B2F1D5C00CA00ED62CB /* HomeViewController.swift */,
 				424C7B301D5C00CA00ED62CB /* HomeViewController.xib */,
 			);
@@ -331,9 +351,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4229CE0E1D5C4C3F0086B035 /* HomeCarouselCell.xib in Resources */,
 				4246FD051D5B2A9A00CB9199 /* NewVersionViewController.xib in Resources */,
 				424C7B3E1D5C00EF00ED62CB /* OrderViewController.xib in Resources */,
 				424C7B3A1D5C00E100ED62CB /* RankViewController.xib in Resources */,
+				4229CE131D5C4FB20086B035 /* HomeTableViewHeaderView.xib in Resources */,
 				4246FCC91D5B1F4200CB9199 /* Assets.xcassets in Resources */,
 				424C7B361D5C00D500ED62CB /* ProfileViewController.xib in Resources */,
 				424C7B321D5C00CA00ED62CB /* HomeViewController.xib in Resources */,
@@ -363,6 +385,7 @@
 			files = (
 				4246FD041D5B2A9A00CB9199 /* NewVersionViewController.swift in Sources */,
 				424C7B3D1D5C00EF00ED62CB /* OrderViewController.swift in Sources */,
+				4229CE0D1D5C4C3F0086B035 /* HomeCarouselCell.swift in Sources */,
 				4246FCFB1D5B261E00CB9199 /* Common.swift in Sources */,
 				424C7B391D5C00E100ED62CB /* RankViewController.swift in Sources */,
 				4246FCFD1D5B27CE00CB9199 /* NewVersionTool.swift in Sources */,
@@ -370,6 +393,7 @@
 				4246FCF91D5B25AE00CB9199 /* MainNavigationController.swift in Sources */,
 				4246FCF71D5B259800CB9199 /* MainTabBarController.swift in Sources */,
 				424C7B311D5C00CA00ED62CB /* HomeViewController.swift in Sources */,
+				4229CE111D5C4F490086B035 /* HomeTableViewHeaderView.swift in Sources */,
 				424C7B401D5C028500ED62CB /* UIColor+Category.swift in Sources */,
 				424C7B351D5C00D500ED62CB /* ProfileViewController.swift in Sources */,
 				4246FCC21D5B1F4200CB9199 /* AppDelegate.swift in Sources */,
