@@ -24,6 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = NewVersionTool.rootController()
         //4.显示窗口
         window?.makeKeyAndVisible()
+    
         return true
     }
 }

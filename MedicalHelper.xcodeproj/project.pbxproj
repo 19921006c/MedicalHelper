@@ -17,6 +17,16 @@
 		4246FCFD1D5B27CE00CB9199 /* NewVersionTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4246FCFC1D5B27CE00CB9199 /* NewVersionTool.swift */; };
 		4246FD041D5B2A9A00CB9199 /* NewVersionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4246FD021D5B2A9A00CB9199 /* NewVersionViewController.swift */; };
 		4246FD051D5B2A9A00CB9199 /* NewVersionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4246FD031D5B2A9A00CB9199 /* NewVersionViewController.xib */; };
+		424C7B311D5C00CA00ED62CB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C7B2F1D5C00CA00ED62CB /* HomeViewController.swift */; };
+		424C7B321D5C00CA00ED62CB /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 424C7B301D5C00CA00ED62CB /* HomeViewController.xib */; };
+		424C7B351D5C00D500ED62CB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C7B331D5C00D500ED62CB /* ProfileViewController.swift */; };
+		424C7B361D5C00D500ED62CB /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 424C7B341D5C00D500ED62CB /* ProfileViewController.xib */; };
+		424C7B391D5C00E100ED62CB /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C7B371D5C00E100ED62CB /* RankViewController.swift */; };
+		424C7B3A1D5C00E100ED62CB /* RankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 424C7B381D5C00E100ED62CB /* RankViewController.xib */; };
+		424C7B3D1D5C00EF00ED62CB /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C7B3B1D5C00EF00ED62CB /* OrderViewController.swift */; };
+		424C7B3E1D5C00EF00ED62CB /* OrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 424C7B3C1D5C00EF00ED62CB /* OrderViewController.xib */; };
+		424C7B401D5C028500ED62CB /* UIColor+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C7B3F1D5C028500ED62CB /* UIColor+Category.swift */; };
+		424C7B421D5C0FB100ED62CB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C7B411D5C0FB100ED62CB /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +63,16 @@
 		4246FCFC1D5B27CE00CB9199 /* NewVersionTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewVersionTool.swift; sourceTree = "<group>"; };
 		4246FD021D5B2A9A00CB9199 /* NewVersionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewVersionViewController.swift; sourceTree = "<group>"; };
 		4246FD031D5B2A9A00CB9199 /* NewVersionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewVersionViewController.xib; sourceTree = "<group>"; };
+		424C7B2F1D5C00CA00ED62CB /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		424C7B301D5C00CA00ED62CB /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		424C7B331D5C00D500ED62CB /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		424C7B341D5C00D500ED62CB /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		424C7B371D5C00E100ED62CB /* RankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
+		424C7B381D5C00E100ED62CB /* RankViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RankViewController.xib; sourceTree = "<group>"; };
+		424C7B3B1D5C00EF00ED62CB /* OrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		424C7B3C1D5C00EF00ED62CB /* OrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderViewController.xib; sourceTree = "<group>"; };
+		424C7B3F1D5C028500ED62CB /* UIColor+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Category.swift"; sourceTree = "<group>"; };
+		424C7B411D5C0FB100ED62CB /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +166,8 @@
 		4246FCF01D5B256000CB9199 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				424C7B2F1D5C00CA00ED62CB /* HomeViewController.swift */,
+				424C7B301D5C00CA00ED62CB /* HomeViewController.xib */,
 			);
 			name = Home;
 			path = Classes/Home;
@@ -158,6 +180,7 @@
 				4246FCF81D5B25AE00CB9199 /* MainNavigationController.swift */,
 				4246FD021D5B2A9A00CB9199 /* NewVersionViewController.swift */,
 				4246FD031D5B2A9A00CB9199 /* NewVersionViewController.xib */,
+				424C7B411D5C0FB100ED62CB /* BaseViewController.swift */,
 			);
 			name = Main;
 			path = Classes/Main;
@@ -166,6 +189,8 @@
 		4246FCF21D5B256000CB9199 /* Order */ = {
 			isa = PBXGroup;
 			children = (
+				424C7B3B1D5C00EF00ED62CB /* OrderViewController.swift */,
+				424C7B3C1D5C00EF00ED62CB /* OrderViewController.xib */,
 			);
 			name = Order;
 			path = Classes/Order;
@@ -174,6 +199,8 @@
 		4246FCF31D5B256000CB9199 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				424C7B331D5C00D500ED62CB /* ProfileViewController.swift */,
+				424C7B341D5C00D500ED62CB /* ProfileViewController.xib */,
 			);
 			name = Profile;
 			path = Classes/Profile;
@@ -182,6 +209,8 @@
 		4246FCF41D5B256000CB9199 /* Rank */ = {
 			isa = PBXGroup;
 			children = (
+				424C7B371D5C00E100ED62CB /* RankViewController.swift */,
+				424C7B381D5C00E100ED62CB /* RankViewController.xib */,
 			);
 			name = Rank;
 			path = Classes/Rank;
@@ -192,6 +221,7 @@
 			children = (
 				4246FCFA1D5B261E00CB9199 /* Common.swift */,
 				4246FCFC1D5B27CE00CB9199 /* NewVersionTool.swift */,
+				424C7B3F1D5C028500ED62CB /* UIColor+Category.swift */,
 			);
 			name = Tool;
 			path = Classes/Tool;
@@ -302,7 +332,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4246FD051D5B2A9A00CB9199 /* NewVersionViewController.xib in Resources */,
+				424C7B3E1D5C00EF00ED62CB /* OrderViewController.xib in Resources */,
+				424C7B3A1D5C00E100ED62CB /* RankViewController.xib in Resources */,
 				4246FCC91D5B1F4200CB9199 /* Assets.xcassets in Resources */,
+				424C7B361D5C00D500ED62CB /* ProfileViewController.xib in Resources */,
+				424C7B321D5C00CA00ED62CB /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,10 +362,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				4246FD041D5B2A9A00CB9199 /* NewVersionViewController.swift in Sources */,
+				424C7B3D1D5C00EF00ED62CB /* OrderViewController.swift in Sources */,
 				4246FCFB1D5B261E00CB9199 /* Common.swift in Sources */,
+				424C7B391D5C00E100ED62CB /* RankViewController.swift in Sources */,
 				4246FCFD1D5B27CE00CB9199 /* NewVersionTool.swift in Sources */,
+				424C7B421D5C0FB100ED62CB /* BaseViewController.swift in Sources */,
 				4246FCF91D5B25AE00CB9199 /* MainNavigationController.swift in Sources */,
 				4246FCF71D5B259800CB9199 /* MainTabBarController.swift in Sources */,
+				424C7B311D5C00CA00ED62CB /* HomeViewController.swift in Sources */,
+				424C7B401D5C028500ED62CB /* UIColor+Category.swift in Sources */,
+				424C7B351D5C00D500ED62CB /* ProfileViewController.swift in Sources */,
 				4246FCC21D5B1F4200CB9199 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
