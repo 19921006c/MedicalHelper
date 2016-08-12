@@ -40,7 +40,7 @@ class MainNavigationController: UINavigationController {
         
         navigationBar.titleTextAttributes = mutDic as? [String : AnyObject]
         
-        print("initialize")
+//        print("initialize")
     }
 
 }

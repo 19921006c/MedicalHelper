@@ -10,7 +10,8 @@ import UIKit
 
 let HomeCarouselCellIdentifier = "HomeCarouselCell"
 let HomeTableViewHeaderViewIdentifier = "HomeTableViewHeaderView"
-let kCarouselCellHeight = 115 * FITSCALE
+let HotSectionExpertCellIdentifier = "HotSectionExpertCell"
+let kCarouselCellHeight = 115
 
 class HomeViewController: BaseViewController {
 
@@ -25,7 +26,8 @@ class HomeViewController: BaseViewController {
     //注册cell
     private func registerCell(){
         tableView.registerNib(UINib(nibName: HomeCarouselCellIdentifier, bundle: nil), forCellReuseIdentifier: HomeCarouselCellIdentifier)
-        tableView.registerNib(UINib(nibName: HomeCarouselCellIdentifier, bundle: nil), forCellReuseIdentifier: HomeCarouselCellIdentifier)
+        tableView.registerClass(HomeTableViewHeaderView.self, forHeaderFooterViewReuseIdentifier: HomeTableViewHeaderViewIdentifier)
+        tableView.registerNib(UINib(nibName: HotSectionExpertCellIdentifier, bundle: nil), forCellReuseIdentifier: HotSectionExpertCellIdentifier)
     }
 
 }
@@ -36,13 +38,23 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
         if section == 0 {
             return 1
         }
-        return 3
+        return 1
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(HomeCarouselCellIdentifier, forIndexPath: indexPath)
+        var cell: UITableViewCell?
+        if indexPath.section == 0{
+            cell = tableView.dequeueReusableCellWithIdentifier(HomeCarouselCellIdentifier, forIndexPath: indexPath)
+        }
         
-        return cell
+        if indexPath.section == 1{
+            if indexPath.row == 0 {//热门科室专家
+                cell = tableView.dequeueReusableCellWithIdentifier(HotSectionExpertCellIdentifier, forIndexPath: indexPath)
+                cell?.selectionStyle = UITableViewCellSelectionStyle.None
+            }
+        }
+        
+        return cell!
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -53,11 +65,19 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
         if indexPath.section == 0 {
             return 115.0
         }
+        
+        if indexPath.row == 0 {
+            let width = kScreenWidth / 4.5
+            let margin: CGFloat = 8.0
+            let height = width - margin * 2 + margin * 2 + 4 * 2 + 14 + 13
+            let cellHeight = height + 39 + 14
+            return cellHeight
+        }
         return 50.0
     }
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if section == 1 {
-            let headerView = tableView.dequeueReusableHeaderFooterViewWithIdentifier(HomeCarouselCellIdentifier)
+            let headerView = tableView.dequeueReusableHeaderFooterViewWithIdentifier(HomeTableViewHeaderViewIdentifier) as! HomeTableViewHeaderView
             return headerView
         }
         return nil

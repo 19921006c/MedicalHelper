@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4229CE0D1D5C4C3F0086B035 /* HomeCarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4229CE0B1D5C4C3F0086B035 /* HomeCarouselCell.swift */; };
-		4229CE0E1D5C4C3F0086B035 /* HomeCarouselCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4229CE0C1D5C4C3F0086B035 /* HomeCarouselCell.xib */; };
-		4229CE111D5C4F490086B035 /* HomeTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4229CE101D5C4F490086B035 /* HomeTableViewHeaderView.swift */; };
-		4229CE131D5C4FB20086B035 /* HomeTableViewHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4229CE121D5C4FB20086B035 /* HomeTableViewHeaderView.xib */; };
 		4246FCC21D5B1F4200CB9199 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4246FCC11D5B1F4200CB9199 /* AppDelegate.swift */; };
 		4246FCC91D5B1F4200CB9199 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4246FCC81D5B1F4200CB9199 /* Assets.xcassets */; };
 		4246FCD71D5B1F4200CB9199 /* MedicalHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4246FCD61D5B1F4200CB9199 /* MedicalHelperTests.swift */; };
@@ -31,6 +27,16 @@
 		424C7B3E1D5C00EF00ED62CB /* OrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 424C7B3C1D5C00EF00ED62CB /* OrderViewController.xib */; };
 		424C7B401D5C028500ED62CB /* UIColor+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C7B3F1D5C028500ED62CB /* UIColor+Category.swift */; };
 		424C7B421D5C0FB100ED62CB /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C7B411D5C0FB100ED62CB /* BaseViewController.swift */; };
+		424E813D1D5DA96E002DFD95 /* HomeCarouselCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424E81381D5DA96E002DFD95 /* HomeCarouselCell.swift */; };
+		424E813E1D5DA96E002DFD95 /* HomeCarouselCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 424E81391D5DA96E002DFD95 /* HomeCarouselCell.xib */; };
+		424E813F1D5DA96E002DFD95 /* HomeTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424E813C1D5DA96E002DFD95 /* HomeTableViewHeaderView.swift */; };
+		424E81421D5DA9F5002DFD95 /* HotSectionExpertCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424E81401D5DA9F5002DFD95 /* HotSectionExpertCell.swift */; };
+		424E81431D5DA9F5002DFD95 /* HotSectionExpertCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 424E81411D5DA9F5002DFD95 /* HotSectionExpertCell.xib */; };
+		424E81461D5DB6E5002DFD95 /* HotSectionExpertCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424E81441D5DB6E5002DFD95 /* HotSectionExpertCollectionCell.swift */; };
+		424E81471D5DB6E5002DFD95 /* HotSectionExpertCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 424E81451D5DB6E5002DFD95 /* HotSectionExpertCollectionCell.xib */; };
+		424E81491D5DBEBF002DFD95 /* CustomAFHTTPSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424E81481D5DBEBF002DFD95 /* CustomAFHTTPSessionManager.swift */; };
+		42DF9C4F1D5DC4E2007550B2 /* bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DF9C4E1D5DC4E2007550B2 /* bridge.m */; };
+		50B2243A63CBE4834EAD26CC /* Pods_MedicalHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 611AB5006DCB9452D5C576D1 /* Pods_MedicalHelper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,10 +57,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4229CE0B1D5C4C3F0086B035 /* HomeCarouselCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeCarouselCell.swift; path = ../HomeCarouselCell.swift; sourceTree = "<group>"; };
-		4229CE0C1D5C4C3F0086B035 /* HomeCarouselCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeCarouselCell.xib; path = ../HomeCarouselCell.xib; sourceTree = "<group>"; };
-		4229CE101D5C4F490086B035 /* HomeTableViewHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewHeaderView.swift; sourceTree = "<group>"; };
-		4229CE121D5C4FB20086B035 /* HomeTableViewHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewHeaderView.xib; sourceTree = "<group>"; };
 		4246FCBE1D5B1F4200CB9199 /* MedicalHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicalHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4246FCC11D5B1F4200CB9199 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4246FCC81D5B1F4200CB9199 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,6 +83,19 @@
 		424C7B3C1D5C00EF00ED62CB /* OrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderViewController.xib; sourceTree = "<group>"; };
 		424C7B3F1D5C028500ED62CB /* UIColor+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Category.swift"; sourceTree = "<group>"; };
 		424C7B411D5C0FB100ED62CB /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		424E81381D5DA96E002DFD95 /* HomeCarouselCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCarouselCell.swift; sourceTree = "<group>"; };
+		424E81391D5DA96E002DFD95 /* HomeCarouselCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCarouselCell.xib; sourceTree = "<group>"; };
+		424E813C1D5DA96E002DFD95 /* HomeTableViewHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewHeaderView.swift; sourceTree = "<group>"; };
+		424E81401D5DA9F5002DFD95 /* HotSectionExpertCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotSectionExpertCell.swift; sourceTree = "<group>"; };
+		424E81411D5DA9F5002DFD95 /* HotSectionExpertCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotSectionExpertCell.xib; sourceTree = "<group>"; };
+		424E81441D5DB6E5002DFD95 /* HotSectionExpertCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotSectionExpertCollectionCell.swift; sourceTree = "<group>"; };
+		424E81451D5DB6E5002DFD95 /* HotSectionExpertCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotSectionExpertCollectionCell.xib; sourceTree = "<group>"; };
+		424E81481D5DBEBF002DFD95 /* CustomAFHTTPSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAFHTTPSessionManager.swift; sourceTree = "<group>"; };
+		42DF9C4D1D5DC4E2007550B2 /* MedicalHelper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MedicalHelper-Bridging-Header.h"; sourceTree = "<group>"; };
+		42DF9C4E1D5DC4E2007550B2 /* bridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bridge.m; sourceTree = "<group>"; };
+		611AB5006DCB9452D5C576D1 /* Pods_MedicalHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedicalHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CA96CAD2CDCC1A81A75C71B /* Pods-MedicalHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicalHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-MedicalHelper/Pods-MedicalHelper.release.xcconfig"; sourceTree = "<group>"; };
+		8D0C69913ACBF41836CBB232 /* Pods-MedicalHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MedicalHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MedicalHelper/Pods-MedicalHelper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50B2243A63CBE4834EAD26CC /* Pods_MedicalHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,10 +127,11 @@
 		4229CE0F1D5C4D530086B035 /* HomeCell */ = {
 			isa = PBXGroup;
 			children = (
-				4229CE0B1D5C4C3F0086B035 /* HomeCarouselCell.swift */,
-				4229CE0C1D5C4C3F0086B035 /* HomeCarouselCell.xib */,
-				4229CE101D5C4F490086B035 /* HomeTableViewHeaderView.swift */,
-				4229CE121D5C4FB20086B035 /* HomeTableViewHeaderView.xib */,
+				424E81351D5DA96E002DFD95 /* FiveCell(专家访谈) */,
+				424E81361D5DA96E002DFD95 /* FourCell(热门科室) */,
+				424E81371D5DA96E002DFD95 /* OneCell(轮播图) */,
+				424E813A1D5DA96E002DFD95 /* ThreeCell(热门科室专家) */,
+				424E813B1D5DA96E002DFD95 /* TwoCell(找医院) */,
 			);
 			path = HomeCell;
 			sourceTree = "<group>";
@@ -126,6 +143,8 @@
 				4246FCD51D5B1F4200CB9199 /* MedicalHelperTests */,
 				4246FCE01D5B1F4200CB9199 /* MedicalHelperUITests */,
 				4246FCBF1D5B1F4200CB9199 /* Products */,
+				A9A2A54BC6FB255BFA5058B5 /* Pods */,
+				606B657B7A7F72E14F3ADE8C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -242,9 +261,71 @@
 				4246FCFA1D5B261E00CB9199 /* Common.swift */,
 				4246FCFC1D5B27CE00CB9199 /* NewVersionTool.swift */,
 				424C7B3F1D5C028500ED62CB /* UIColor+Category.swift */,
+				424E81481D5DBEBF002DFD95 /* CustomAFHTTPSessionManager.swift */,
+				42DF9C4E1D5DC4E2007550B2 /* bridge.m */,
+				42DF9C4D1D5DC4E2007550B2 /* MedicalHelper-Bridging-Header.h */,
 			);
 			name = Tool;
 			path = Classes/Tool;
+			sourceTree = "<group>";
+		};
+		424E81351D5DA96E002DFD95 /* FiveCell(专家访谈) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "FiveCell(专家访谈)";
+			sourceTree = "<group>";
+		};
+		424E81361D5DA96E002DFD95 /* FourCell(热门科室) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "FourCell(热门科室)";
+			sourceTree = "<group>";
+		};
+		424E81371D5DA96E002DFD95 /* OneCell(轮播图) */ = {
+			isa = PBXGroup;
+			children = (
+				424E81381D5DA96E002DFD95 /* HomeCarouselCell.swift */,
+				424E81391D5DA96E002DFD95 /* HomeCarouselCell.xib */,
+			);
+			path = "OneCell(轮播图)";
+			sourceTree = "<group>";
+		};
+		424E813A1D5DA96E002DFD95 /* ThreeCell(热门科室专家) */ = {
+			isa = PBXGroup;
+			children = (
+				424E81401D5DA9F5002DFD95 /* HotSectionExpertCell.swift */,
+				424E81411D5DA9F5002DFD95 /* HotSectionExpertCell.xib */,
+				424E81441D5DB6E5002DFD95 /* HotSectionExpertCollectionCell.swift */,
+				424E81451D5DB6E5002DFD95 /* HotSectionExpertCollectionCell.xib */,
+			);
+			path = "ThreeCell(热门科室专家)";
+			sourceTree = "<group>";
+		};
+		424E813B1D5DA96E002DFD95 /* TwoCell(找医院) */ = {
+			isa = PBXGroup;
+			children = (
+				424E813C1D5DA96E002DFD95 /* HomeTableViewHeaderView.swift */,
+			);
+			path = "TwoCell(找医院)";
+			sourceTree = "<group>";
+		};
+		606B657B7A7F72E14F3ADE8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				611AB5006DCB9452D5C576D1 /* Pods_MedicalHelper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9A2A54BC6FB255BFA5058B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D0C69913ACBF41836CBB232 /* Pods-MedicalHelper.debug.xcconfig */,
+				6CA96CAD2CDCC1A81A75C71B /* Pods-MedicalHelper.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,9 +335,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4246FCE61D5B1F4200CB9199 /* Build configuration list for PBXNativeTarget "MedicalHelper" */;
 			buildPhases = (
+				F3E03AD5428DEA44C4A531F4 /* [CP] Check Pods Manifest.lock */,
 				4246FCBA1D5B1F4200CB9199 /* Sources */,
 				4246FCBB1D5B1F4200CB9199 /* Frameworks */,
 				4246FCBC1D5B1F4200CB9199 /* Resources */,
+				3E4FEB3FA8B56E14D8063534 /* [CP] Embed Pods Frameworks */,
+				E0EE98B5A1DF3EFD15D6F01A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -351,12 +435,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4229CE0E1D5C4C3F0086B035 /* HomeCarouselCell.xib in Resources */,
+				424E813E1D5DA96E002DFD95 /* HomeCarouselCell.xib in Resources */,
+				424E81431D5DA9F5002DFD95 /* HotSectionExpertCell.xib in Resources */,
 				4246FD051D5B2A9A00CB9199 /* NewVersionViewController.xib in Resources */,
 				424C7B3E1D5C00EF00ED62CB /* OrderViewController.xib in Resources */,
 				424C7B3A1D5C00E100ED62CB /* RankViewController.xib in Resources */,
-				4229CE131D5C4FB20086B035 /* HomeTableViewHeaderView.xib in Resources */,
 				4246FCC91D5B1F4200CB9199 /* Assets.xcassets in Resources */,
+				424E81471D5DB6E5002DFD95 /* HotSectionExpertCollectionCell.xib in Resources */,
 				424C7B361D5C00D500ED62CB /* ProfileViewController.xib in Resources */,
 				424C7B321D5C00CA00ED62CB /* HomeViewController.xib in Resources */,
 			);
@@ -378,6 +463,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3E4FEB3FA8B56E14D8063534 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedicalHelper/Pods-MedicalHelper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0EE98B5A1DF3EFD15D6F01A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MedicalHelper/Pods-MedicalHelper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3E03AD5428DEA44C4A531F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4246FCBA1D5B1F4200CB9199 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -385,16 +518,20 @@
 			files = (
 				4246FD041D5B2A9A00CB9199 /* NewVersionViewController.swift in Sources */,
 				424C7B3D1D5C00EF00ED62CB /* OrderViewController.swift in Sources */,
-				4229CE0D1D5C4C3F0086B035 /* HomeCarouselCell.swift in Sources */,
+				424E813D1D5DA96E002DFD95 /* HomeCarouselCell.swift in Sources */,
+				424E81461D5DB6E5002DFD95 /* HotSectionExpertCollectionCell.swift in Sources */,
 				4246FCFB1D5B261E00CB9199 /* Common.swift in Sources */,
 				424C7B391D5C00E100ED62CB /* RankViewController.swift in Sources */,
+				424E81491D5DBEBF002DFD95 /* CustomAFHTTPSessionManager.swift in Sources */,
 				4246FCFD1D5B27CE00CB9199 /* NewVersionTool.swift in Sources */,
 				424C7B421D5C0FB100ED62CB /* BaseViewController.swift in Sources */,
 				4246FCF91D5B25AE00CB9199 /* MainNavigationController.swift in Sources */,
 				4246FCF71D5B259800CB9199 /* MainTabBarController.swift in Sources */,
 				424C7B311D5C00CA00ED62CB /* HomeViewController.swift in Sources */,
-				4229CE111D5C4F490086B035 /* HomeTableViewHeaderView.swift in Sources */,
+				42DF9C4F1D5DC4E2007550B2 /* bridge.m in Sources */,
+				424E813F1D5DA96E002DFD95 /* HomeTableViewHeaderView.swift in Sources */,
 				424C7B401D5C028500ED62CB /* UIColor+Category.swift in Sources */,
+				424E81421D5DA9F5002DFD95 /* HotSectionExpertCell.swift in Sources */,
 				424C7B351D5C00D500ED62CB /* ProfileViewController.swift in Sources */,
 				4246FCC21D5B1F4200CB9199 /* AppDelegate.swift in Sources */,
 			);
@@ -517,28 +654,35 @@
 		};
 		4246FCE71D5B1F4200CB9199 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D0C69913ACBF41836CBB232 /* Pods-MedicalHelper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MedicalHelper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = joe.MedicalHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MedicalHelper/Classes/Tool/MedicalHelper-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		4246FCE81D5B1F4200CB9199 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CA96CAD2CDCC1A81A75C71B /* Pods-MedicalHelper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MedicalHelper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = joe.MedicalHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MedicalHelper/Classes/Tool/MedicalHelper-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

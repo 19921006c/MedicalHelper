@@ -7,7 +7,6 @@
 //  轮播图cell
 
 import UIKit
-
 let HomeCarouselCollectionCellIdentifier = "HomeCarouselCollectionCell"
 class HomeCarouselCell: UITableViewCell{
 
@@ -18,14 +17,14 @@ class HomeCarouselCell: UITableViewCell{
     var timer: NSTimer?
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+
         height = self.contentView.bounds.width
-        print("height = \(height)")
+//        print("height = \(height)")
         setupCollectionViewAttributes()
         
         //
         collectionView.performBatchUpdates(nil) { (_) in
-            self.collectionView.setContentOffset(CGPoint(x: 375, y: 0), animated: false)
+            self.collectionView.setContentOffset(CGPoint(x: kScreenWidth, y: 0), animated: false)
             self.addNSTimer()
         }
     }
@@ -88,7 +87,7 @@ extension HomeCarouselCell: UICollectionViewDataSource, UICollectionViewDelegate
     //MARK: collection view delegate
     
     func scrollViewDidEndScrollingAnimation(scrollView: UIScrollView) {
-        var pageIndex = scrollView.contentOffset.x / kScreenWidth
+        let pageIndex = scrollView.contentOffset.x / kScreenWidth
         
         if pageIndex == 3 {
             toSecondPage()
@@ -127,7 +126,7 @@ extension HomeCarouselCell: UICollectionViewDataSource, UICollectionViewDelegate
     //添加定时器
     private func addNSTimer(){
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(3, target: self, selector: #selector(HomeCarouselCell.next), userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(3, target: self, selector: Selector("next"), userInfo: nil, repeats: true)
         
         loop.addTimer(timer!, forMode: NSRunLoopCommonModes)
     }
@@ -160,7 +159,7 @@ class HomeCarouselCollectionCell: UICollectionViewCell{
     }
     
     //MARK: - 懒加载
-    private lazy var carouseImageView: UIImageView = UIImageView()
+    private lazy var carouseImageView: UIImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: kScreenWidth, height: 115))
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
