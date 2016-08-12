@@ -12,21 +12,24 @@ let HomeCarouselCollectionCellIdentifier = "HomeCarouselCollectionCell"
 class HomeCarouselCell: UITableViewCell{
 
     @IBOutlet weak var collectionView: UICollectionView!
-    
+
     var height: CGFloat = 0
-    //记录上次滑动结束时contentOffSet X
-    var recordX: CGFloat = 0
-    //记录当前显示的是0  还是 1
-    var recordCurrentIndex: Int = 0
-    //记录开始滑动X
-    var beginDraggingX: CGFloat = 0.0
+    
+    var timer: NSTimer?
     override func awakeFromNib() {
         super.awakeFromNib()
         
         height = self.contentView.bounds.width
         print("height = \(height)")
         setupCollectionViewAttributes()
+        
+        //
+        collectionView.performBatchUpdates(nil) { (_) in
+            self.collectionView.setContentOffset(CGPoint(x: 375, y: 0), animated: false)
+            self.addNSTimer()
+        }
     }
+    
     
     //设置collection view
     private func setupCollectionViewAttributes(){
@@ -37,6 +40,12 @@ class HomeCarouselCell: UITableViewCell{
         collectionView.pagingEnabled = true
         collectionView.bounces = true
         collectionView.showsHorizontalScrollIndicator = false
+    }
+    
+    func next(){
+        var pageIndex = collectionView.contentOffset.x / kScreenWidth
+        pageIndex++
+        self.collectionView.setContentOffset(CGPoint(x: kScreenWidth * pageIndex, y: 0), animated: true)
     }
     
     //MARK: -懒加载
@@ -50,10 +59,12 @@ class HomeCarouselCell: UITableViewCell{
         return layout
     }()
     //data source 数组
-    private lazy var dataSourceArray: NSMutableArray = NSMutableArray(objects: "0","1")
+    private lazy var dataSourceArray: NSMutableArray = NSMutableArray(objects: "0","1","0","1")
     
     //放轮播图的imageview
     private lazy var carouselImageView: UIImageView = UIImageView()
+    
+    private lazy var loop: NSRunLoop = NSRunLoop.currentRunLoop()
 }
 
 extension HomeCarouselCell: UICollectionViewDataSource, UICollectionViewDelegate{
@@ -71,87 +82,60 @@ extension HomeCarouselCell: UICollectionViewDataSource, UICollectionViewDelegate
         return cell
     }
     
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    }
+    
     //MARK: collection view delegate
-//    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
-//        
-//        let lastX = scrollView.contentOffset.x
-//        
-//        if lastX == recordX {
-//            return
-//        }
-//        dataSourceArray.exchangeObjectAtIndex(0, withObjectAtIndex: 1)
-//        if lastX == kScreenWidth {
-//            
-//            scrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: false)
-//            print("left = \(lastX)")
-//            recordX = lastX
-//            return
-//        }
-//        print("right = \(lastX)")
-//        
-//        scrollView.setContentOffset(CGPoint(x: kScreenWidth, y: 0), animated: false)
-//        recordX = lastX
-//    }
+    
+    func scrollViewDidEndScrollingAnimation(scrollView: UIScrollView) {
+        var pageIndex = scrollView.contentOffset.x / kScreenWidth
+        
+        if pageIndex == 3 {
+            toSecondPage()
+        }
+        
+    }
     //滑动减速结束
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
         let lastX = scrollView.contentOffset.x
         
-        if lastX == 0 {
-            //未翻页
-            print("未翻页")
-            scrollView.setContentOffset(CGPointZero, animated: false)
+        if lastX == 1125 {//到第四张时，自动跳转到第2张
+            toSecondPage()
             return
         }
         
-        if lastX == kScreenWidth {
-            //翻页
-            print("翻页")
-            if recordCurrentIndex == 0 {//第一张
-                exchangeDataSourceArrayOne()
-                recordCurrentIndex = 1
-            }else{
-                exchangeDataSourceArrayZero()
-                recordCurrentIndex = 0
-            }
-            scrollView.setContentOffset(CGPointZero, animated: false)
+        if lastX == 0 {//到第一张时，自动跳转到第3张
+            toThirdPage()
             return
         }
     }
     
+    private func toSecondPage(){
+        collectionView.setContentOffset(CGPoint(x: kScreenWidth, y: 0), animated: false)
+    }
+    private func toThirdPage(){
+        collectionView.setContentOffset(CGPoint(x: kScreenWidth * 2, y: 0), animated: false)
+    }
+    func scrollViewWillEndDragging(scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        addNSTimer()
+    }
+    
+    //
     func scrollViewWillBeginDragging(scrollView: UIScrollView) {
+        removeNSTimer()
+    }
+    //添加定时器
+    private func addNSTimer(){
         
-        beginDraggingX = scrollView.contentOffset.x
+        timer = NSTimer.scheduledTimerWithTimeInterval(3, target: self, selector: #selector(HomeCarouselCell.next), userInfo: nil, repeats: true)
+        
+        loop.addTimer(timer!, forMode: NSRunLoopCommonModes)
+    }
+    //移除定时器
+    private func removeNSTimer(){
+        timer!.invalidate()
     }
     
-    func scrollViewDidScroll(scrollView: UIScrollView) {
-        let beginDraggingNext = scrollView.contentOffset.x
-        if (beginDraggingNext - beginDraggingX) > 0 {//右滑
-            if recordCurrentIndex == 0 {//第一张
-                
-            }else{//第二张
-//                exchangeDataSourceArrayZero()
-            }
-        }else{//左滑
-            if recordCurrentIndex == 0 {//第一张
-//                exchangeDataSourceArrayOne()
-            }else{//第二张
-                
-            }
-        }
-    }
-    
-    private func exchangeDataSourceArrayZero(){
-        dataSourceArray.removeAllObjects()
-        dataSourceArray.addObject("0")
-        dataSourceArray.addObject("1")
-        collectionView.reloadData()
-    }
-    private func exchangeDataSourceArrayOne(){
-        dataSourceArray.removeAllObjects()
-        dataSourceArray.addObject("1")
-        dataSourceArray.addObject("0")
-        collectionView.reloadData()
-    }
 }
 
 class HomeCarouselCollectionCell: UICollectionViewCell{
