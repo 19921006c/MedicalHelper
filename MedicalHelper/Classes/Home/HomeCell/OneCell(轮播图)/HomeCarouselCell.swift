@@ -82,6 +82,14 @@ extension HomeCarouselCell: UICollectionViewDataSource, UICollectionViewDelegate
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        if indexPath.item == 1 || indexPath.item == 3{//点击免费挂号预约专家
+            
+            return
+        }
+        //点击姨妈思密达
+        let str = "http://itunes.apple.com/us/app/id867910885"
+        let url = NSURL(string: str)
+        UIApplication.sharedApplication().openURL(url!)
     }
     
     //MARK: collection view delegate

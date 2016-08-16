@@ -12,6 +12,7 @@ let HotSectionExpertCollectionCellIdentifier = "HotSectionExpertCollectionCell"
 
 class HotSectionExpertCell: UITableViewCell {
     
+    var dataSourceArray: [HotSectionExpertCollectionCellModel] = []
     @IBOutlet weak var collectionView: UICollectionView!
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,6 +23,21 @@ class HotSectionExpertCell: UITableViewCell {
     }
     //拿数据
     private func requestData(){
+        let resourcePath = NSBundle.mainBundle().resourcePath! as NSString
+        let path = resourcePath.stringByAppendingPathComponent("hotDoct.plist")
+        
+        //data
+        let data = NSArray(contentsOfFile: path)
+//        print(data)
+        for array in data!{
+            let dictionary = array[0]
+
+            let model = HotSectionExpertCollectionCellModel(dictionary: dictionary as! [String : AnyObject])
+            
+            dataSourceArray.append(model)
+        }
+//        let tmpArray = NSArray()
+        
         
     }
     
@@ -40,12 +56,12 @@ class HotSectionExpertCell: UITableViewCell {
 extension HotSectionExpertCell: UICollectionViewDataSource{
     //data source
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 8
+        return dataSourceArray.count
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(HotSectionExpertCollectionCellIdentifier, forIndexPath: indexPath) as! HotSectionExpertCollectionCell
-        cell.contentView.backgroundColor = UIColor .redColor()
+        cell.model = dataSourceArray[indexPath.item]
         return cell
     }
 }

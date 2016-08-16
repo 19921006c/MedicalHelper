@@ -3,18 +3,79 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="MedicalHelper" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="jeG-81-a7w" id="q10-Hq-Eg0"/>
+                <outlet property="tableViewTop" destination="aB6-vs-VEk" id="q7J-EK-fjm"/>
+                <outlet property="topImageViewTop" destination="pw4-0V-FBh" id="d3J-gs-jeN"/>
+                <outlet property="topImageViewWidth" destination="sGs-ul-EbY" id="DMz-Rt-IhC"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jeG-81-a7w">
+                    <rect key="frame" x="0.0" y="205" width="375" height="412"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="pq3-eO-UFJ"/>
+                        <outlet property="delegate" destination="-1" id="kqs-1t-Kpx"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NCT-oW-Npg">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="my_image_01" translatesAutoresizingMaskIntoConstraints="NO" id="snP-ny-u93">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="snP-ny-u93" secondAttribute="height" multiplier="5:3" id="bUq-EI-MFJ"/>
+                                <constraint firstAttribute="width" constant="375" id="sGs-ul-EbY"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="375" id="97I-nv-2k0"/>
+                        <constraint firstAttribute="bottom" secondItem="snP-ny-u93" secondAttribute="bottom" id="AtJ-rl-gav"/>
+                        <constraint firstAttribute="width" secondItem="NCT-oW-Npg" secondAttribute="height" multiplier="5:3" id="a4O-vm-tsJ"/>
+                        <constraint firstItem="snP-ny-u93" firstAttribute="centerX" secondItem="NCT-oW-Npg" secondAttribute="centerX" id="fgU-ll-G9w"/>
+                        <constraint firstItem="snP-ny-u93" firstAttribute="top" secondItem="NCT-oW-Npg" secondAttribute="top" id="pw4-0V-FBh"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="97I-nv-2k0"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="jeG-81-a7w" firstAttribute="top" secondItem="NCT-oW-Npg" secondAttribute="bottom" id="2PX-ir-NcO"/>
+                <constraint firstItem="NCT-oW-Npg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5cC-gH-TK2"/>
+                <constraint firstItem="jeG-81-a7w" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Eny-Zp-rB3"/>
+                <constraint firstItem="jeG-81-a7w" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KKS-Pi-E1D"/>
+                <constraint firstAttribute="bottom" secondItem="jeG-81-a7w" secondAttribute="bottom" id="SOf-Uk-8Lf"/>
+                <constraint firstItem="jeG-81-a7w" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="205" id="aB6-vs-VEk"/>
+                <constraint firstItem="jeG-81-a7w" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dVp-Cq-afx"/>
+                <constraint firstAttribute="trailing" secondItem="jeG-81-a7w" secondAttribute="trailing" id="f6M-rf-Ha7"/>
+                <constraint firstItem="NCT-oW-Npg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pnT-n1-oYC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="2PX-ir-NcO"/>
+                    <exclude reference="Eny-Zp-rB3"/>
+                    <exclude reference="dVp-Cq-afx"/>
+                </mask>
+            </variation>
         </view>
     </objects>
+    <resources>
+        <image name="my_image_01" width="375" height="225"/>
+    </resources>
 </document>

@@ -20,13 +20,13 @@ class MainTabBarController: UITabBarController {
     //添加所有控制器
     private func addChildViewControllers(){
         //1.1首页
-        addAloneChildViewController(HomeViewController(), norImageName: "TabBar_Home", selectedImageName: "TabBar_HomeSelected", title: "首页")
+        addAloneChildViewController(HomeViewController(controllerName: "HomeViewController"), norImageName: "TabBar_Home", selectedImageName: "TabBar_HomeSelected", title: "首页")
         //1.2排行榜
-        addAloneChildViewController(HomeViewController(), norImageName: "TabBar_Rank", selectedImageName: "TabBar_RankSelected", title: "排行榜")
+        addAloneChildViewController(RankViewController(controllerName: "RankViewController"), norImageName: "TabBar_Rank", selectedImageName: "TabBar_RankSelected", title: "排行榜")
         //1.3我的订单
-        addAloneChildViewController(HomeViewController(), norImageName: "TabBar_Order", selectedImageName: "TabBar_OrderSelected", title: "我的订单")
+        addAloneChildViewController(OrderViewController(controllerName: "OrderViewController"), norImageName: "TabBar_Order", selectedImageName: "TabBar_OrderSelected", title: "我的订单")
         //1.4我
-        addAloneChildViewController(HomeViewController(), norImageName: "TabBar_Profile", selectedImageName: "TabBar_ProfileSelected", title: "我")
+        addAloneChildViewController(ProfileViewController(controllerName: "ProfileViewController"), norImageName: "TabBar_Profile", selectedImageName: "TabBar_ProfileSelected", title: "我")
     }
     
     //添加单个控制器
@@ -39,6 +39,10 @@ class MainTabBarController: UITabBarController {
         let navController = MainNavigationController()
         navController.addChildViewController(controller)
         addChildViewController(navController)
+        
+        if title == "我" || title == "排行榜"{
+            controller.navigationController?.navigationBarHidden = true
+        }
     }
     
     //MARK: -懒加载

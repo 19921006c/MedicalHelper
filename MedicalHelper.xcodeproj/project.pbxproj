@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4225AD541D614B8400B1992A /* hotDoct.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4225AD531D614B8400B1992A /* hotDoct.plist */; };
+		4225AD561D614F8900B1992A /* HotSectionExpertCollectionCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4225AD551D614F8900B1992A /* HotSectionExpertCollectionCellModel.swift */; };
+		4225AD591D615EEA00B1992A /* HotSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4225AD571D615EEA00B1992A /* HotSectionCell.swift */; };
+		4225AD5A1D615EEA00B1992A /* HotSectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4225AD581D615EEA00B1992A /* HotSectionCell.xib */; };
+		4225AD5D1D616B5800B1992A /* HotSectionCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4225AD5B1D616B5800B1992A /* HotSectionCollectionCell.swift */; };
+		4225AD5E1D616B5800B1992A /* HotSectionCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4225AD5C1D616B5800B1992A /* HotSectionCollectionCell.xib */; };
+		4225AD601D616D8100B1992A /* HotSectionCollectionCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4225AD5F1D616D8100B1992A /* HotSectionCollectionCellModel.swift */; };
+		4225AD631D618F5300B1992A /* ExpertTalkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4225AD611D618F5300B1992A /* ExpertTalkCell.swift */; };
+		4225AD641D618F5300B1992A /* ExpertTalkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4225AD621D618F5300B1992A /* ExpertTalkCell.xib */; };
+		42309F921D62AA0F005F79BD /* CustomAFHTTPSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42309F911D62AA0F005F79BD /* CustomAFHTTPSessionManager.swift */; };
+		42309F951D62B8F6005F79BD /* FindHospitalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42309F931D62B8F6005F79BD /* FindHospitalViewController.swift */; };
+		42309F961D62B8F6005F79BD /* FindHospitalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42309F941D62B8F6005F79BD /* FindHospitalViewController.xib */; };
+		42309FDA1D62EF61005F79BD /* UIBarButtonItem+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42309FD91D62EF61005F79BD /* UIBarButtonItem+Category.swift */; };
+		42309FDC1D62F910005F79BD /* FindHospitalTooView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42309FDB1D62F910005F79BD /* FindHospitalTooView.swift */; };
 		4246FCC21D5B1F4200CB9199 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4246FCC11D5B1F4200CB9199 /* AppDelegate.swift */; };
 		4246FCC91D5B1F4200CB9199 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4246FCC81D5B1F4200CB9199 /* Assets.xcassets */; };
 		4246FCD71D5B1F4200CB9199 /* MedicalHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4246FCD61D5B1F4200CB9199 /* MedicalHelperTests.swift */; };
@@ -34,7 +48,6 @@
 		424E81431D5DA9F5002DFD95 /* HotSectionExpertCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 424E81411D5DA9F5002DFD95 /* HotSectionExpertCell.xib */; };
 		424E81461D5DB6E5002DFD95 /* HotSectionExpertCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424E81441D5DB6E5002DFD95 /* HotSectionExpertCollectionCell.swift */; };
 		424E81471D5DB6E5002DFD95 /* HotSectionExpertCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 424E81451D5DB6E5002DFD95 /* HotSectionExpertCollectionCell.xib */; };
-		424E81491D5DBEBF002DFD95 /* CustomAFHTTPSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424E81481D5DBEBF002DFD95 /* CustomAFHTTPSessionManager.swift */; };
 		42DF9C4F1D5DC4E2007550B2 /* bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DF9C4E1D5DC4E2007550B2 /* bridge.m */; };
 		50B2243A63CBE4834EAD26CC /* Pods_MedicalHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 611AB5006DCB9452D5C576D1 /* Pods_MedicalHelper.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +70,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4225AD531D614B8400B1992A /* hotDoct.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hotDoct.plist; sourceTree = "<group>"; };
+		4225AD551D614F8900B1992A /* HotSectionExpertCollectionCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotSectionExpertCollectionCellModel.swift; sourceTree = "<group>"; };
+		4225AD571D615EEA00B1992A /* HotSectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotSectionCell.swift; sourceTree = "<group>"; };
+		4225AD581D615EEA00B1992A /* HotSectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotSectionCell.xib; sourceTree = "<group>"; };
+		4225AD5B1D616B5800B1992A /* HotSectionCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotSectionCollectionCell.swift; sourceTree = "<group>"; };
+		4225AD5C1D616B5800B1992A /* HotSectionCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotSectionCollectionCell.xib; sourceTree = "<group>"; };
+		4225AD5F1D616D8100B1992A /* HotSectionCollectionCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotSectionCollectionCellModel.swift; sourceTree = "<group>"; };
+		4225AD611D618F5300B1992A /* ExpertTalkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpertTalkCell.swift; sourceTree = "<group>"; };
+		4225AD621D618F5300B1992A /* ExpertTalkCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpertTalkCell.xib; sourceTree = "<group>"; };
+		42309F911D62AA0F005F79BD /* CustomAFHTTPSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAFHTTPSessionManager.swift; sourceTree = "<group>"; };
+		42309F931D62B8F6005F79BD /* FindHospitalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindHospitalViewController.swift; sourceTree = "<group>"; };
+		42309F941D62B8F6005F79BD /* FindHospitalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindHospitalViewController.xib; sourceTree = "<group>"; };
+		42309FD91D62EF61005F79BD /* UIBarButtonItem+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Category.swift"; sourceTree = "<group>"; };
+		42309FDB1D62F910005F79BD /* FindHospitalTooView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindHospitalTooView.swift; sourceTree = "<group>"; };
 		4246FCBE1D5B1F4200CB9199 /* MedicalHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedicalHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4246FCC11D5B1F4200CB9199 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4246FCC81D5B1F4200CB9199 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -90,7 +117,6 @@
 		424E81411D5DA9F5002DFD95 /* HotSectionExpertCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotSectionExpertCell.xib; sourceTree = "<group>"; };
 		424E81441D5DB6E5002DFD95 /* HotSectionExpertCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotSectionExpertCollectionCell.swift; sourceTree = "<group>"; };
 		424E81451D5DB6E5002DFD95 /* HotSectionExpertCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotSectionExpertCollectionCell.xib; sourceTree = "<group>"; };
-		424E81481D5DBEBF002DFD95 /* CustomAFHTTPSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAFHTTPSessionManager.swift; sourceTree = "<group>"; };
 		42DF9C4D1D5DC4E2007550B2 /* MedicalHelper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MedicalHelper-Bridging-Header.h"; sourceTree = "<group>"; };
 		42DF9C4E1D5DC4E2007550B2 /* bridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bridge.m; sourceTree = "<group>"; };
 		611AB5006DCB9452D5C576D1 /* Pods_MedicalHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedicalHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -204,9 +230,12 @@
 		4246FCF01D5B256000CB9199 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				4229CE0F1D5C4D530086B035 /* HomeCell */,
 				424C7B2F1D5C00CA00ED62CB /* HomeViewController.swift */,
 				424C7B301D5C00CA00ED62CB /* HomeViewController.xib */,
+				4229CE0F1D5C4D530086B035 /* HomeCell */,
+				42309F931D62B8F6005F79BD /* FindHospitalViewController.swift */,
+				42309F941D62B8F6005F79BD /* FindHospitalViewController.xib */,
+				42309FDB1D62F910005F79BD /* FindHospitalTooView.swift */,
 			);
 			name = Home;
 			path = Classes/Home;
@@ -261,9 +290,10 @@
 				4246FCFA1D5B261E00CB9199 /* Common.swift */,
 				4246FCFC1D5B27CE00CB9199 /* NewVersionTool.swift */,
 				424C7B3F1D5C028500ED62CB /* UIColor+Category.swift */,
-				424E81481D5DBEBF002DFD95 /* CustomAFHTTPSessionManager.swift */,
 				42DF9C4E1D5DC4E2007550B2 /* bridge.m */,
 				42DF9C4D1D5DC4E2007550B2 /* MedicalHelper-Bridging-Header.h */,
+				42309F911D62AA0F005F79BD /* CustomAFHTTPSessionManager.swift */,
+				42309FD91D62EF61005F79BD /* UIBarButtonItem+Category.swift */,
 			);
 			name = Tool;
 			path = Classes/Tool;
@@ -272,6 +302,8 @@
 		424E81351D5DA96E002DFD95 /* FiveCell(专家访谈) */ = {
 			isa = PBXGroup;
 			children = (
+				4225AD611D618F5300B1992A /* ExpertTalkCell.swift */,
+				4225AD621D618F5300B1992A /* ExpertTalkCell.xib */,
 			);
 			path = "FiveCell(专家访谈)";
 			sourceTree = "<group>";
@@ -279,6 +311,11 @@
 		424E81361D5DA96E002DFD95 /* FourCell(热门科室) */ = {
 			isa = PBXGroup;
 			children = (
+				4225AD571D615EEA00B1992A /* HotSectionCell.swift */,
+				4225AD581D615EEA00B1992A /* HotSectionCell.xib */,
+				4225AD5B1D616B5800B1992A /* HotSectionCollectionCell.swift */,
+				4225AD5C1D616B5800B1992A /* HotSectionCollectionCell.xib */,
+				4225AD5F1D616D8100B1992A /* HotSectionCollectionCellModel.swift */,
 			);
 			path = "FourCell(热门科室)";
 			sourceTree = "<group>";
@@ -295,10 +332,12 @@
 		424E813A1D5DA96E002DFD95 /* ThreeCell(热门科室专家) */ = {
 			isa = PBXGroup;
 			children = (
+				4225AD531D614B8400B1992A /* hotDoct.plist */,
 				424E81401D5DA9F5002DFD95 /* HotSectionExpertCell.swift */,
 				424E81411D5DA9F5002DFD95 /* HotSectionExpertCell.xib */,
 				424E81441D5DB6E5002DFD95 /* HotSectionExpertCollectionCell.swift */,
 				424E81451D5DB6E5002DFD95 /* HotSectionExpertCollectionCell.xib */,
+				4225AD551D614F8900B1992A /* HotSectionExpertCollectionCellModel.swift */,
 			);
 			path = "ThreeCell(热门科室专家)";
 			sourceTree = "<group>";
@@ -435,11 +474,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4225AD5A1D615EEA00B1992A /* HotSectionCell.xib in Resources */,
+				4225AD541D614B8400B1992A /* hotDoct.plist in Resources */,
 				424E813E1D5DA96E002DFD95 /* HomeCarouselCell.xib in Resources */,
 				424E81431D5DA9F5002DFD95 /* HotSectionExpertCell.xib in Resources */,
+				4225AD641D618F5300B1992A /* ExpertTalkCell.xib in Resources */,
 				4246FD051D5B2A9A00CB9199 /* NewVersionViewController.xib in Resources */,
+				4225AD5E1D616B5800B1992A /* HotSectionCollectionCell.xib in Resources */,
 				424C7B3E1D5C00EF00ED62CB /* OrderViewController.xib in Resources */,
 				424C7B3A1D5C00E100ED62CB /* RankViewController.xib in Resources */,
+				42309F961D62B8F6005F79BD /* FindHospitalViewController.xib in Resources */,
 				4246FCC91D5B1F4200CB9199 /* Assets.xcassets in Resources */,
 				424E81471D5DB6E5002DFD95 /* HotSectionExpertCollectionCell.xib in Resources */,
 				424C7B361D5C00D500ED62CB /* ProfileViewController.xib in Resources */,
@@ -519,13 +563,19 @@
 				4246FD041D5B2A9A00CB9199 /* NewVersionViewController.swift in Sources */,
 				424C7B3D1D5C00EF00ED62CB /* OrderViewController.swift in Sources */,
 				424E813D1D5DA96E002DFD95 /* HomeCarouselCell.swift in Sources */,
+				4225AD601D616D8100B1992A /* HotSectionCollectionCellModel.swift in Sources */,
+				4225AD591D615EEA00B1992A /* HotSectionCell.swift in Sources */,
 				424E81461D5DB6E5002DFD95 /* HotSectionExpertCollectionCell.swift in Sources */,
+				42309FDC1D62F910005F79BD /* FindHospitalTooView.swift in Sources */,
 				4246FCFB1D5B261E00CB9199 /* Common.swift in Sources */,
+				4225AD631D618F5300B1992A /* ExpertTalkCell.swift in Sources */,
+				42309F921D62AA0F005F79BD /* CustomAFHTTPSessionManager.swift in Sources */,
 				424C7B391D5C00E100ED62CB /* RankViewController.swift in Sources */,
-				424E81491D5DBEBF002DFD95 /* CustomAFHTTPSessionManager.swift in Sources */,
+				4225AD561D614F8900B1992A /* HotSectionExpertCollectionCellModel.swift in Sources */,
 				4246FCFD1D5B27CE00CB9199 /* NewVersionTool.swift in Sources */,
 				424C7B421D5C0FB100ED62CB /* BaseViewController.swift in Sources */,
 				4246FCF91D5B25AE00CB9199 /* MainNavigationController.swift in Sources */,
+				4225AD5D1D616B5800B1992A /* HotSectionCollectionCell.swift in Sources */,
 				4246FCF71D5B259800CB9199 /* MainTabBarController.swift in Sources */,
 				424C7B311D5C00CA00ED62CB /* HomeViewController.swift in Sources */,
 				42DF9C4F1D5DC4E2007550B2 /* bridge.m in Sources */,
@@ -533,6 +583,8 @@
 				424C7B401D5C028500ED62CB /* UIColor+Category.swift in Sources */,
 				424E81421D5DA9F5002DFD95 /* HotSectionExpertCell.swift in Sources */,
 				424C7B351D5C00D500ED62CB /* ProfileViewController.swift in Sources */,
+				42309F951D62B8F6005F79BD /* FindHospitalViewController.swift in Sources */,
+				42309FDA1D62EF61005F79BD /* UIBarButtonItem+Category.swift in Sources */,
 				4246FCC21D5B1F4200CB9199 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

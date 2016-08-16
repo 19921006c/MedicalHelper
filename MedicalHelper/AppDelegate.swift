@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         //1.创建窗口
         window = UIWindow(frame: kScreenBounds)
-        //2.设置window背景色白色
+        //2.设置window背景色白色http://wereadteam.github.io/2016/07/20/MLeaksFinder2/
         window?.backgroundColor = UIColor.whiteColor()
         //3.判断启动控制器是那个
         window?.rootViewController = NewVersionTool.rootController()

@@ -21,15 +21,9 @@ class MainNavigationController: UINavigationController {
         
         navigationBar.barTintColor = UIColor.colorWithHexString("#ff5f64")
         navigationBar.translucent = false
-//        var image = UIImage(named: "nav_bg")
-//
-//        image = image?.resizableImageWithCapInsets(UIEdgeInsetsMake(0, 0, (image?.size.height)! - 1,(image?.size.width)! - 1))
-//
-//        navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarPosition.Any, bar)
+
         navigationBar.setBackgroundImage(UIImage(), forBarPosition: UIBarPosition.Any, barMetrics: UIBarMetrics.Default)
         navigationBar.shadowImage = UIImage()
-//
-//        navigationBar.shadowImage = UIImage()
         
         let mutDic : NSDictionary!
         
@@ -39,8 +33,13 @@ class MainNavigationController: UINavigationController {
         ]
         
         navigationBar.titleTextAttributes = mutDic as? [String : AnyObject]
-        
-//        print("initialize")
+    }
+    
+    override func pushViewController(viewController: UIViewController, animated: Bool) {
+        if viewControllers.count > 0{//不是栈底控制器则隐藏tabbar
+            viewController.hidesBottomBarWhenPushed = true
+        }
+        super.pushViewController(viewController, animated: animated)
     }
 
 }

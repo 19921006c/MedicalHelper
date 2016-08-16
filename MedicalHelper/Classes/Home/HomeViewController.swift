@@ -11,6 +11,8 @@ import UIKit
 let HomeCarouselCellIdentifier = "HomeCarouselCell"
 let HomeTableViewHeaderViewIdentifier = "HomeTableViewHeaderView"
 let HotSectionExpertCellIdentifier = "HotSectionExpertCell"
+let HotSectionCellIdentifier = "HotSectionCell"
+let ExpertTalkCellIdentifier = "ExpertTalkCell"
 let kCarouselCellHeight = 115
 
 class HomeViewController: BaseViewController {
@@ -20,6 +22,7 @@ class HomeViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.leftBarButtonItem = nil
         registerCell()
     }
     
@@ -28,17 +31,20 @@ class HomeViewController: BaseViewController {
         tableView.registerNib(UINib(nibName: HomeCarouselCellIdentifier, bundle: nil), forCellReuseIdentifier: HomeCarouselCellIdentifier)
         tableView.registerClass(HomeTableViewHeaderView.self, forHeaderFooterViewReuseIdentifier: HomeTableViewHeaderViewIdentifier)
         tableView.registerNib(UINib(nibName: HotSectionExpertCellIdentifier, bundle: nil), forCellReuseIdentifier: HotSectionExpertCellIdentifier)
+        tableView.registerNib(UINib(nibName: HotSectionCellIdentifier, bundle: nil), forCellReuseIdentifier: HotSectionCellIdentifier)
+        tableView.registerNib(UINib(nibName: ExpertTalkCellIdentifier, bundle: nil), forCellReuseIdentifier: ExpertTalkCellIdentifier)
     }
 
 }
 
+//MARK: - table view 数据源  代理方法
 extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         if section == 0 {
             return 1
         }
-        return 1
+        return 3
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -50,10 +56,17 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
         if indexPath.section == 1{
             if indexPath.row == 0 {//热门科室专家
                 cell = tableView.dequeueReusableCellWithIdentifier(HotSectionExpertCellIdentifier, forIndexPath: indexPath)
-                cell?.selectionStyle = UITableViewCellSelectionStyle.None
+            }
+            
+            if indexPath.row == 1 {//热门科室
+                cell = tableView.dequeueReusableCellWithIdentifier(HotSectionCellIdentifier, forIndexPath: indexPath)
+            }
+            
+            if indexPath.row == 2 {//专家访谈
+                cell = tableView.dequeueReusableCellWithIdentifier(ExpertTalkCellIdentifier, forIndexPath: indexPath)
             }
         }
-        
+        cell?.selectionStyle = UITableViewCellSelectionStyle.None
         return cell!
     }
     
@@ -73,11 +86,23 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
             let cellHeight = height + 39 + 14
             return cellHeight
         }
+        
+        if indexPath.row == 1{
+            let height:CGFloat = 85
+            let cellHeight = height * 3 + 39 + 14
+            return cellHeight
+        }
+        
+        if indexPath.row == 2{
+            return 174
+        }
         return 50.0
     }
     func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         if section == 1 {
             let headerView = tableView.dequeueReusableHeaderFooterViewWithIdentifier(HomeTableViewHeaderViewIdentifier) as! HomeTableViewHeaderView
+            headerView.delegate = self
+            
             return headerView
         }
         return nil
@@ -93,6 +118,29 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
         }
         return 115
     }
-    
-    
+}
+
+//找医院，找专家，疾病挂号，科室挂号 点击事件代理
+extension HomeViewController: HomeTableViewHeaderViewDelegate{
+    func homeTableViewHeaderViewDidSelectedItem(index: Int) {
+        if index == 1 || index == 2{
+            let controller = FindHospitalViewController()
+            
+            if index == 1{
+                controller.title = "找医院"
+                let array = NSArray(array: ["全国","全部科室","三甲医院"])
+                controller.totalArray = array
+            }else{
+                controller.title = "找专家"
+            }
+            navigationController?.pushViewController(controller, animated: true)
+            return
+        }
+        if index == 3{
+            return
+        }
+        if index == 4{
+            return
+        }
+    }
 }

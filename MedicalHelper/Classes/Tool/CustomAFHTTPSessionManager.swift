@@ -31,7 +31,7 @@ class CustomAFHTTPSessionManager: AFHTTPSessionManager {
 
 extension CustomAFHTTPSessionManager{
 
-    private func loadSearchInfo(finished: (responsable: AnyObject?, error: NSError?) -> ()){
+    func loadSearchInfo(finished: (responsable: AnyObject?, error: NSError?) -> ()){
         
         /*
         parameters[@"keyword"] = param[@"keyword"];
@@ -49,7 +49,7 @@ extension CustomAFHTTPSessionManager{
         NSString *signStr = [NSString stringWithFormat:@"%@%@",SignDefaultStr,parameters[@"tag"]].md5String;
         parameters[@"sign"] = signStr;
         */
-        let param: [String: AnyObject] = [
+        let param: [String: String] = [
             "keyword" : "keyword",
             "act" : "zhuanjia",
             "fun" : "Doctor",
@@ -62,8 +62,10 @@ extension CustomAFHTTPSessionManager{
         ]
         
         CustomAFHTTPSessionManager.share().GET(nil, parameters: param, success: { (_, responseObject) -> Void in
+            print(responseObject)
             finished(responsable: responseObject, error: nil)
             }) { (_, error) -> Void in
+                print(error)
                 finished(responsable: nil, error: error)
         }
     }

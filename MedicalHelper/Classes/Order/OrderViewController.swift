@@ -8,12 +8,12 @@
 
 import UIKit
 
-class OrderViewController: UIViewController {
+class OrderViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        navigationItem.leftBarButtonItem = nil
     }
 
     override func didReceiveMemoryWarning() {
