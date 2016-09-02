@@ -10,26 +10,16 @@ import UIKit
 
 class OrderViewController: BaseViewController {
 
+    @IBOutlet weak var btn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         navigationItem.leftBarButtonItem = nil
+        btn.setBackgroundImage(UIImage.imageWithColor(UIColor.colorWithHexString("#ff5f64")), forState: .Normal)
+        btn.setBackgroundImage(UIImage.imageWithColor(UIColor.colorWithHexString("#e15053")), forState: .Highlighted)
+        btn.layer.cornerRadius = 5.0
+        btn.clipsToBounds = true
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

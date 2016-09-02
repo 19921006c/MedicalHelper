@@ -31,9 +31,11 @@ class FindHospitalTooView: UIView {
     }
     
     func loadSubView(){
-        for var index = 0; index < totalArray?.count; ++index{
+        for var index = 0; index < totalArray?.count; index += 1{
             initBtn(index)
         }
+        
+        
     }
     
     private func initBtn(index: Int){
@@ -46,7 +48,11 @@ class FindHospitalTooView: UIView {
         btn.backgroundColor = UIColor.redColor()
         btn.tag = 10000 + index
         btn.setTitle(totalArray![index] as? String, forState: .Normal)
+        btn.addTarget(self, action: Selector("btnAction:"), forControlEvents: .TouchUpInside)
         addSubview(btn)
     }
     
+    func btnAction(sender: UIButton){
+        
+    }
 }

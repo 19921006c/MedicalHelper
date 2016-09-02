@@ -48,6 +48,12 @@
 		424E81431D5DA9F5002DFD95 /* HotSectionExpertCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 424E81411D5DA9F5002DFD95 /* HotSectionExpertCell.xib */; };
 		424E81461D5DB6E5002DFD95 /* HotSectionExpertCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424E81441D5DB6E5002DFD95 /* HotSectionExpertCollectionCell.swift */; };
 		424E81471D5DB6E5002DFD95 /* HotSectionExpertCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 424E81451D5DB6E5002DFD95 /* HotSectionExpertCollectionCell.xib */; };
+		425E01441D767701000A78B0 /* HttpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425E01431D767701000A78B0 /* HttpTool.swift */; };
+		425E01461D7678EB000A78B0 /* RandResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425E01451D7678EB000A78B0 /* RandResultModel.swift */; };
+		425E01491D768A65000A78B0 /* RankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425E01471D768A65000A78B0 /* RankTableViewCell.swift */; };
+		425E014A1D768A65000A78B0 /* RankTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425E01481D768A65000A78B0 /* RankTableViewCell.xib */; };
+		42BB864C1D77D33000F583CB /* UIImae+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB864B1D77D33000F583CB /* UIImae+Color.swift */; };
+		42BB864E1D78279E00F583CB /* RankHttpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB864D1D78279E00F583CB /* RankHttpTool.swift */; };
 		42DF9C4F1D5DC4E2007550B2 /* bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DF9C4E1D5DC4E2007550B2 /* bridge.m */; };
 		50B2243A63CBE4834EAD26CC /* Pods_MedicalHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 611AB5006DCB9452D5C576D1 /* Pods_MedicalHelper.framework */; };
 /* End PBXBuildFile section */
@@ -117,6 +123,12 @@
 		424E81411D5DA9F5002DFD95 /* HotSectionExpertCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotSectionExpertCell.xib; sourceTree = "<group>"; };
 		424E81441D5DB6E5002DFD95 /* HotSectionExpertCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotSectionExpertCollectionCell.swift; sourceTree = "<group>"; };
 		424E81451D5DB6E5002DFD95 /* HotSectionExpertCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotSectionExpertCollectionCell.xib; sourceTree = "<group>"; };
+		425E01431D767701000A78B0 /* HttpTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpTool.swift; sourceTree = "<group>"; };
+		425E01451D7678EB000A78B0 /* RandResultModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandResultModel.swift; sourceTree = "<group>"; };
+		425E01471D768A65000A78B0 /* RankTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankTableViewCell.swift; sourceTree = "<group>"; };
+		425E01481D768A65000A78B0 /* RankTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RankTableViewCell.xib; sourceTree = "<group>"; };
+		42BB864B1D77D33000F583CB /* UIImae+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImae+Color.swift"; sourceTree = "<group>"; };
+		42BB864D1D78279E00F583CB /* RankHttpTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankHttpTool.swift; sourceTree = "<group>"; };
 		42DF9C4D1D5DC4E2007550B2 /* MedicalHelper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MedicalHelper-Bridging-Header.h"; sourceTree = "<group>"; };
 		42DF9C4E1D5DC4E2007550B2 /* bridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bridge.m; sourceTree = "<group>"; };
 		611AB5006DCB9452D5C576D1 /* Pods_MedicalHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedicalHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -279,6 +291,10 @@
 			children = (
 				424C7B371D5C00E100ED62CB /* RankViewController.swift */,
 				424C7B381D5C00E100ED62CB /* RankViewController.xib */,
+				425E01451D7678EB000A78B0 /* RandResultModel.swift */,
+				425E01471D768A65000A78B0 /* RankTableViewCell.swift */,
+				425E01481D768A65000A78B0 /* RankTableViewCell.xib */,
+				42BB864D1D78279E00F583CB /* RankHttpTool.swift */,
 			);
 			name = Rank;
 			path = Classes/Rank;
@@ -293,7 +309,9 @@
 				42DF9C4E1D5DC4E2007550B2 /* bridge.m */,
 				42DF9C4D1D5DC4E2007550B2 /* MedicalHelper-Bridging-Header.h */,
 				42309F911D62AA0F005F79BD /* CustomAFHTTPSessionManager.swift */,
+				425E01431D767701000A78B0 /* HttpTool.swift */,
 				42309FD91D62EF61005F79BD /* UIBarButtonItem+Category.swift */,
+				42BB864B1D77D33000F583CB /* UIImae+Color.swift */,
 			);
 			name = Tool;
 			path = Classes/Tool;
@@ -487,6 +505,7 @@
 				4246FCC91D5B1F4200CB9199 /* Assets.xcassets in Resources */,
 				424E81471D5DB6E5002DFD95 /* HotSectionExpertCollectionCell.xib in Resources */,
 				424C7B361D5C00D500ED62CB /* ProfileViewController.xib in Resources */,
+				425E014A1D768A65000A78B0 /* RankTableViewCell.xib in Resources */,
 				424C7B321D5C00CA00ED62CB /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -561,9 +580,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4246FD041D5B2A9A00CB9199 /* NewVersionViewController.swift in Sources */,
+				42BB864E1D78279E00F583CB /* RankHttpTool.swift in Sources */,
+				42BB864C1D77D33000F583CB /* UIImae+Color.swift in Sources */,
 				424C7B3D1D5C00EF00ED62CB /* OrderViewController.swift in Sources */,
 				424E813D1D5DA96E002DFD95 /* HomeCarouselCell.swift in Sources */,
 				4225AD601D616D8100B1992A /* HotSectionCollectionCellModel.swift in Sources */,
+				425E01491D768A65000A78B0 /* RankTableViewCell.swift in Sources */,
 				4225AD591D615EEA00B1992A /* HotSectionCell.swift in Sources */,
 				424E81461D5DB6E5002DFD95 /* HotSectionExpertCollectionCell.swift in Sources */,
 				42309FDC1D62F910005F79BD /* FindHospitalTooView.swift in Sources */,
@@ -575,11 +597,13 @@
 				4246FCFD1D5B27CE00CB9199 /* NewVersionTool.swift in Sources */,
 				424C7B421D5C0FB100ED62CB /* BaseViewController.swift in Sources */,
 				4246FCF91D5B25AE00CB9199 /* MainNavigationController.swift in Sources */,
+				425E01441D767701000A78B0 /* HttpTool.swift in Sources */,
 				4225AD5D1D616B5800B1992A /* HotSectionCollectionCell.swift in Sources */,
 				4246FCF71D5B259800CB9199 /* MainTabBarController.swift in Sources */,
 				424C7B311D5C00CA00ED62CB /* HomeViewController.swift in Sources */,
 				42DF9C4F1D5DC4E2007550B2 /* bridge.m in Sources */,
 				424E813F1D5DA96E002DFD95 /* HomeTableViewHeaderView.swift in Sources */,
+				425E01461D7678EB000A78B0 /* RandResultModel.swift in Sources */,
 				424C7B401D5C028500ED62CB /* UIColor+Category.swift in Sources */,
 				424E81421D5DA9F5002DFD95 /* HotSectionExpertCell.swift in Sources */,
 				424C7B351D5C00D500ED62CB /* ProfileViewController.swift in Sources */,

@@ -1,19 +1,65 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderViewController" customModule="MedicalHelper" customModuleProvider="target">
             <connections>
+                <outlet property="btn" destination="yCT-mw-ivk" id="pfk-Cg-qeh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NoOrderImage" translatesAutoresizingMaskIntoConstraints="NO" id="wba-Lj-SOA">
+                    <rect key="frame" x="119" y="86" width="82" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="82" id="0do-ft-WsX"/>
+                        <constraint firstAttribute="height" constant="180" id="9Rm-tg-zfD"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您还没有预约任何医生" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38H-Qe-Qxr">
+                    <rect key="frame" x="80" y="276" width="160" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCT-mw-ivk">
+                    <rect key="frame" x="24" y="399.5" width="272" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="5VQ-A5-wsZ"/>
+                        <constraint firstAttribute="width" constant="328" id="60H-rQ-IjW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="我要挂号"/>
+                    <state key="highlighted" title="我要挂号"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="60H-rQ-IjW"/>
+                        </mask>
+                    </variation>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="yCT-mw-ivk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="24" id="1uN-PA-VKe"/>
+                <constraint firstItem="yCT-mw-ivk" firstAttribute="top" secondItem="38H-Qe-Qxr" secondAttribute="bottom" constant="104" id="2nc-yp-0Ns"/>
+                <constraint firstItem="38H-Qe-Qxr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CQ4-xL-cd2"/>
+                <constraint firstItem="wba-Lj-SOA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="86" id="RLH-0w-vGy"/>
+                <constraint firstItem="yCT-mw-ivk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="T8H-mh-ZgQ"/>
+                <constraint firstItem="38H-Qe-Qxr" firstAttribute="top" secondItem="wba-Lj-SOA" secondAttribute="bottom" constant="10" id="Tow-jG-APo"/>
+                <constraint firstAttribute="trailing" secondItem="yCT-mw-ivk" secondAttribute="trailing" constant="24" id="UHv-ht-f7S"/>
+                <constraint firstItem="wba-Lj-SOA" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xxV-9i-5R8"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
+    <resources>
+        <image name="NoOrderImage" width="82" height="180"/>
+    </resources>
 </document>

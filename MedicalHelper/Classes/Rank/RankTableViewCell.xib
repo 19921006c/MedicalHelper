@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="RankTableViewCell" customModule="MedicalHelper" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RankCellThumbImage" translatesAutoresizingMaskIntoConstraints="NO" id="mH1-Tg-IyI">
+                        <rect key="frame" x="14" y="16" width="95" height="67.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="mH1-Tg-IyI" secondAttribute="height" multiplier="93:66" id="UT6-Qw-HxV"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RankTop1Flag" translatesAutoresizingMaskIntoConstraints="NO" id="mA2-a4-X99">
+                        <rect key="frame" x="295" y="0.0" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="Vbf-qA-vMa"/>
+                            <constraint firstAttribute="width" secondItem="mA2-a4-X99" secondAttribute="height" multiplier="1:1" id="eaz-Ga-sTE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AP-Fg-afb" userLabel="排名">
+                        <rect key="frame" x="312" y="2" width="5.5" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Udy-7V-3Td" userLabel="科室名称">
+                        <rect key="frame" x="117" y="16" width="203" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="专家声誉" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHz-1q-1mE" userLabel="专家声誉">
+                        <rect key="frame" x="117" y="41" width="203" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qty-RP-H2a" userLabel="地址">
+                        <rect key="frame" x="117" y="66" width="203" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XfN-gN-Rzp">
+                        <rect key="frame" x="0.0" y="98" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.83921568627450982" green="0.83921568627450982" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="nE5-eb-DGW"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qty-RP-H2a" firstAttribute="bottom" secondItem="mH1-Tg-IyI" secondAttribute="bottom" id="0Gi-bA-OPk"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="UHz-1q-1mE" secondAttribute="trailing" id="0wE-bZ-8UA"/>
+                    <constraint firstItem="UHz-1q-1mE" firstAttribute="leading" secondItem="mH1-Tg-IyI" secondAttribute="trailing" constant="8" id="56L-vF-wYm"/>
+                    <constraint firstAttribute="trailing" secondItem="3AP-Fg-afb" secondAttribute="trailing" constant="2" id="7Tj-pT-LUM"/>
+                    <constraint firstAttribute="trailing" secondItem="mA2-a4-X99" secondAttribute="trailing" id="BFk-Rr-2hL"/>
+                    <constraint firstItem="mH1-Tg-IyI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="FKW-HM-Qqn"/>
+                    <constraint firstItem="UHz-1q-1mE" firstAttribute="centerY" secondItem="mH1-Tg-IyI" secondAttribute="centerY" id="PPV-fy-20D"/>
+                    <constraint firstAttribute="trailing" secondItem="XfN-gN-Rzp" secondAttribute="trailing" id="UFJ-WV-uUi"/>
+                    <constraint firstItem="3AP-Fg-afb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="WFh-JP-LPG"/>
+                    <constraint firstItem="Udy-7V-3Td" firstAttribute="top" secondItem="mH1-Tg-IyI" secondAttribute="top" id="XQQ-7b-uo2"/>
+                    <constraint firstItem="qty-RP-H2a" firstAttribute="leading" secondItem="mH1-Tg-IyI" secondAttribute="trailing" constant="8" id="Y7F-Vo-j0z"/>
+                    <constraint firstItem="XfN-gN-Rzp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="aZa-ZY-Zgd"/>
+                    <constraint firstAttribute="bottom" secondItem="XfN-gN-Rzp" secondAttribute="bottom" id="arR-26-VQ7"/>
+                    <constraint firstItem="mA2-a4-X99" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="asc-bO-txB"/>
+                    <constraint firstAttribute="trailing" secondItem="Udy-7V-3Td" secondAttribute="trailing" id="czs-id-8f0"/>
+                    <constraint firstItem="mH1-Tg-IyI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="dNI-my-D4Z"/>
+                    <constraint firstItem="Udy-7V-3Td" firstAttribute="leading" secondItem="mH1-Tg-IyI" secondAttribute="trailing" constant="8" id="dVR-UW-JRM"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="qty-RP-H2a" secondAttribute="trailing" id="eJc-kO-gsd"/>
+                    <constraint firstAttribute="bottom" secondItem="mH1-Tg-IyI" secondAttribute="bottom" constant="16" id="lNX-7U-mFb"/>
+                    <constraint firstAttribute="trailing" secondItem="qty-RP-H2a" secondAttribute="trailing" id="n6n-oR-x5s"/>
+                    <constraint firstAttribute="trailing" secondItem="UHz-1q-1mE" secondAttribute="trailing" id="vAc-uK-OZC"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="0wE-bZ-8UA"/>
+                        <exclude reference="eJc-kO-gsd"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="qty-RP-H2a" id="0RE-qa-85u"/>
+                <outlet property="bottomLineImageViewHeight" destination="nE5-eb-DGW" id="gWZ-ub-Aec"/>
+                <outlet property="iconImageView" destination="mH1-Tg-IyI" id="OgG-Qb-vRL"/>
+                <outlet property="rankImageView" destination="mA2-a4-X99" id="d9T-Ft-as7"/>
+                <outlet property="rankLabel" destination="3AP-Fg-afb" id="GTL-uu-aCE"/>
+                <outlet property="sectionNameLabel" destination="Udy-7V-3Td" id="JIN-eP-lip"/>
+            </connections>
+            <point key="canvasLocation" x="279" y="394"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="RankCellThumbImage" width="93" height="66"/>
+        <image name="RankTop1Flag" width="25" height="25"/>
+    </resources>
+</document>

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MedicalHelper/Classes/Tool/CustomAFHTTPSessionManager.swift"
-            timestampString = "492914463.56778"
+            timestampString = "494302370.246753"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "loadSearchInfo(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MedicalHelper/Classes/Tool/CustomAFHTTPSessionManager.swift"
-            timestampString = "492914465.847635"
+            timestampString = "494302370.246753"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "loadSearchInfo(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MedicalHelper/Classes/Tool/CustomAFHTTPSessionManager.swift"
-            timestampString = "492914704.777823"
+            timestampString = "494302370.246753"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "loadSearchInfo(_:)"
             landmarkType = "5">
             <Locations>
@@ -58,12 +58,12 @@
                   moduleName = "MedicalHelper"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/J-File/Desktop/CodeLibrary/MedicalHelper/MedicalHelper/Classes/Tool/CustomAFHTTPSessionManager.swift"
-                  timestampString = "493027717.905061"
+                  timestampString = "494412484.139694"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "64"
-                  endingLineNumber = "64"
-                  offsetFromSymbolStart = "1155">
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "23">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -73,11 +73,11 @@
                   moduleName = "MedicalHelper"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/J-File/Desktop/CodeLibrary/MedicalHelper/MedicalHelper/Classes/Tool/CustomAFHTTPSessionManager.swift"
-                  timestampString = "493027717.905379"
+                  timestampString = "494412484.139882"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "64"
-                  endingLineNumber = "64"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
                   offsetFromSymbolStart = "23">
                </Location>
             </Locations>
@@ -91,6 +91,38 @@
             continueAfterRunningActions = "No"
             scope = "0"
             stopOnStyle = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MedicalHelper/Classes/Rank/RankViewController.swift"
+            timestampString = "494390025.685473"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MedicalHelper/Classes/Rank/RankViewController.swift"
+            timestampString = "494390025.685473"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

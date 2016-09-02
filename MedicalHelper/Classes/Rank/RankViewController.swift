@@ -9,27 +9,42 @@
 import UIKit
 
 class RankViewController: BaseViewController {
-
+    
+    @IBOutlet weak var tableView: UITableView!
+    //模型数组
+    var modelArray: [RandResultModel]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        //获取数据
+        HttpTool.loadSearchInfo { (responseObject, error) in
+            self.modelArray = responseObject
+            
+            self.tableView.reloadData()
+        }
+        
+        tableView.dataSource = self;
+        tableView.delegate = self;
     }
     
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+extension RankViewController: UITableViewDataSource,UITableViewDelegate{
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return modelArray?.count ?? 0
     }
-    */
-
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell = RankTableViewCell.cellWithTableView(tableView)
+        
+        cell.model = modelArray![indexPath.row]
+        cell.index = indexPath.row
+        return cell;
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 98
+    }
 }

@@ -14,13 +14,13 @@ class CustomAFHTTPSessionManager: AFHTTPSessionManager {
     
     //单例
     static let tools: CustomAFHTTPSessionManager = {
-        let url = NSURL(string: "http://api.wws.xywy.com/")
-        let t = CustomAFHTTPSessionManager(baseURL: url)
+//        let url = NSURL(string: "http://api.wws.xywy.com/")
+        let manager = CustomAFHTTPSessionManager(sessionConfiguration: NSURLSessionConfiguration.defaultSessionConfiguration())
         
         //设置afn能够接受的类型
-        t.responseSerializer.acceptableContentTypes = NSSet(objects: "application/json", "text/json", "text/javascript", "text/plain") as! Set<String>
+        manager.responseSerializer.acceptableContentTypes = NSSet(objects: "application/json", "text/json", "text/javascript", "text/plain", "text/html") as! Set<String>
         
-        return t
+        return manager
     }()
     
     class func share() -> CustomAFHTTPSessionManager{
@@ -33,35 +33,7 @@ extension CustomAFHTTPSessionManager{
 
     func loadSearchInfo(finished: (responsable: AnyObject?, error: NSError?) -> ()){
         
-        /*
-        parameters[@"keyword"] = param[@"keyword"];
-        parameters[@"act"] = @"zhuanjia";
-        parameters[@"fun"] = @"Doctor";
-        parameters[@"tag"] = @"app";
-        parameters[@"source"] = kExpertsource;
-        parameters[@"is_plus"] = @"1";
-        parameters[@"type"] = @"speciality";
-        parameters[@"level"] = @"1";
-        parameters[@"PageNum"] = param[@"PageNum"];
-        
-        
-        
-        NSString *signStr = [NSString stringWithFormat:@"%@%@",SignDefaultStr,parameters[@"tag"]].md5String;
-        parameters[@"sign"] = signStr;
-        */
-        let param: [String: String] = [
-            "keyword" : "keyword",
-            "act" : "zhuanjia",
-            "fun" : "Doctor",
-            "tag" : "app",
-            "source" : kExpertsource,
-            "is_plus" : "1",
-            "type" : "1",
-            "level" : "keyword",
-            "PageNum" : "PageNum"
-        ]
-        
-        CustomAFHTTPSessionManager.share().GET(nil, parameters: param, success: { (_, responseObject) -> Void in
+        CustomAFHTTPSessionManager.share().GET("http://api.wws.xywy.com/index.php?type=speciality&id=46&pagesize=20&tag=app&act=zhuanjia&fun=SpecialtyDepartments&source=zdws&sign=9b7da964e54e330952501c8b44c86f74", parameters: nil, success: { (_, responseObject) -> Void in
             print(responseObject)
             finished(responsable: responseObject, error: nil)
             }) { (_, error) -> Void in
