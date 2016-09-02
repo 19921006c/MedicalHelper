@@ -10,18 +10,21 @@ import UIKit
 
 class HospitalDoctorListViewController: BaseViewController {
 
+    var modelArray : [HospitalDoctorListModel]?
+    
     var model : RandResultModel?
     {
         didSet{
             let param = ["uuidDepart" : "", "uuidHospital" : model!.uuidHospital!];
             RankHttpTool.hospitalDoctorListData(param) { (responseObject, error) -> () in
-                
+                self.modelArray = responseObject
             }
         }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
     }
+    
+    
 }

@@ -57,6 +57,7 @@
 		42BB86511D7917B100F583CB /* HospitalDoctorListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB864F1D7917B100F583CB /* HospitalDoctorListViewController.swift */; };
 		42BB86521D7917B100F583CB /* HospitalDoctorListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42BB86501D7917B100F583CB /* HospitalDoctorListViewController.xib */; };
 		42BB86571D79224400F583CB /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BB86561D79224400F583CB /* NSString+Hash.m */; };
+		42BB865C1D792A5400F583CB /* HospitalDoctorListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB865B1D792A5400F583CB /* HospitalDoctorListModel.swift */; };
 		42DF9C4F1D5DC4E2007550B2 /* bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DF9C4E1D5DC4E2007550B2 /* bridge.m */; };
 		50B2243A63CBE4834EAD26CC /* Pods_MedicalHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 611AB5006DCB9452D5C576D1 /* Pods_MedicalHelper.framework */; };
 /* End PBXBuildFile section */
@@ -132,10 +133,11 @@
 		425E01481D768A65000A78B0 /* RankTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RankTableViewCell.xib; sourceTree = "<group>"; };
 		42BB864B1D77D33000F583CB /* UIImae+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImae+Color.swift"; sourceTree = "<group>"; };
 		42BB864D1D78279E00F583CB /* RankHttpTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankHttpTool.swift; sourceTree = "<group>"; };
-		42BB864F1D7917B100F583CB /* HospitalDoctorListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HospitalDoctorListViewController.swift; sourceTree = "<group>"; };
-		42BB86501D7917B100F583CB /* HospitalDoctorListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HospitalDoctorListViewController.xib; sourceTree = "<group>"; };
+		42BB864F1D7917B100F583CB /* HospitalDoctorListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HospitalDoctorListViewController.swift; path = MedicalHelper/Classes/Rank/HospitalDoctorListViewController.swift; sourceTree = SOURCE_ROOT; };
+		42BB86501D7917B100F583CB /* HospitalDoctorListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HospitalDoctorListViewController.xib; path = MedicalHelper/Classes/Rank/HospitalDoctorListViewController.xib; sourceTree = SOURCE_ROOT; };
 		42BB86551D79224400F583CB /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
 		42BB86561D79224400F583CB /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
+		42BB865B1D792A5400F583CB /* HospitalDoctorListModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HospitalDoctorListModel.swift; sourceTree = "<group>"; };
 		42DF9C4D1D5DC4E2007550B2 /* MedicalHelper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MedicalHelper-Bridging-Header.h"; sourceTree = "<group>"; };
 		42DF9C4E1D5DC4E2007550B2 /* bridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bridge.m; sourceTree = "<group>"; };
 		611AB5006DCB9452D5C576D1 /* Pods_MedicalHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedicalHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -296,14 +298,13 @@
 		4246FCF41D5B256000CB9199 /* Rank */ = {
 			isa = PBXGroup;
 			children = (
+				42BB86581D792A3000F583CB /* HospitalDoctorList */,
 				424C7B371D5C00E100ED62CB /* RankViewController.swift */,
 				424C7B381D5C00E100ED62CB /* RankViewController.xib */,
 				425E01451D7678EB000A78B0 /* RandResultModel.swift */,
 				425E01471D768A65000A78B0 /* RankTableViewCell.swift */,
 				425E01481D768A65000A78B0 /* RankTableViewCell.xib */,
 				42BB864D1D78279E00F583CB /* RankHttpTool.swift */,
-				42BB864F1D7917B100F583CB /* HospitalDoctorListViewController.swift */,
-				42BB86501D7917B100F583CB /* HospitalDoctorListViewController.xib */,
 			);
 			name = Rank;
 			path = Classes/Rank;
@@ -377,6 +378,16 @@
 				424E813C1D5DA96E002DFD95 /* HomeTableViewHeaderView.swift */,
 			);
 			path = "TwoCell(找医院)";
+			sourceTree = "<group>";
+		};
+		42BB86581D792A3000F583CB /* HospitalDoctorList */ = {
+			isa = PBXGroup;
+			children = (
+				42BB864F1D7917B100F583CB /* HospitalDoctorListViewController.swift */,
+				42BB86501D7917B100F583CB /* HospitalDoctorListViewController.xib */,
+				42BB865B1D792A5400F583CB /* HospitalDoctorListModel.swift */,
+			);
+			path = HospitalDoctorList;
 			sourceTree = "<group>";
 		};
 		606B657B7A7F72E14F3ADE8C /* Frameworks */ = {
@@ -591,6 +602,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42BB865C1D792A5400F583CB /* HospitalDoctorListModel.swift in Sources */,
 				4246FD041D5B2A9A00CB9199 /* NewVersionViewController.swift in Sources */,
 				42BB864E1D78279E00F583CB /* RankHttpTool.swift in Sources */,
 				42BB864C1D77D33000F583CB /* UIImae+Color.swift in Sources */,
