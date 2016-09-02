@@ -8,12 +8,17 @@
 
 import UIKit
 
+let SignDefaultStr = "KHy69gsk8%#@kl$"
 class RankHttpTool: NSObject {
     
-    class func  hospitalDoctorListData(finished: (responseObject: [RandResultModel]?, error: NSError?) -> ()){
+    class func  hospitalDoctorListData(param: [String : String],finished: (responseObject: [RandResultModel]?, error: NSError?) -> ()){
         let manager = CustomAFHTTPSessionManager.share()
         
-        
-        manager.GET(<#T##URLString: String!##String!#>, parameters: <#T##AnyObject!#>, success: <#T##((NSURLSessionDataTask!, AnyObject!) -> Void)!##((NSURLSessionDataTask!, AnyObject!) -> Void)!##(NSURLSessionDataTask!, AnyObject!) -> Void#>, failure: <#T##((NSURLSessionDataTask!, NSError!) -> Void)!##((NSURLSessionDataTask!, NSError!) -> Void)!##(NSURLSessionDataTask!, NSError!) -> Void#>)
+        let url = "http://api.wws.xywy.com/?PageNum=1&act=zhuanjia&city=&fun=Doctor&id=&is_plus=1&level=2&pagesize=10&province=&sign=9b7da964e54e330952501c8b44c86f74&source=app_guahaozhushou&tag=app&title=&type=speciality&uuidDepart=&uuidHospital=\(param["uuidHospital"]!)"
+        manager.GET(url, parameters: nil, success: { (_, responseObject) -> Void in
+            print(responseObject)
+            }) { (_, error) -> Void in
+                
+        }
     }
 }

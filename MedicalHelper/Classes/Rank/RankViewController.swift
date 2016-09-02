@@ -47,4 +47,10 @@ extension RankViewController: UITableViewDataSource,UITableViewDelegate{
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 98
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let vc = HospitalDoctorListViewController()
+        vc.model = modelArray![indexPath.row]
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }

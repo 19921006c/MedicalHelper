@@ -58,7 +58,7 @@
                   moduleName = "MedicalHelper"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/J-File/Desktop/CodeLibrary/MedicalHelper/MedicalHelper/Classes/Tool/CustomAFHTTPSessionManager.swift"
-                  timestampString = "494412484.139694"
+                  timestampString = "494479326.849464"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "36"
@@ -73,7 +73,7 @@
                   moduleName = "MedicalHelper"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/J-File/Desktop/CodeLibrary/MedicalHelper/MedicalHelper/Classes/Tool/CustomAFHTTPSessionManager.swift"
-                  timestampString = "494412484.139882"
+                  timestampString = "494479326.849712"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "36"
@@ -91,38 +91,6 @@
             continueAfterRunningActions = "No"
             scope = "0"
             stopOnStyle = "0">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MedicalHelper/Classes/Rank/RankViewController.swift"
-            timestampString = "494390025.685473"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MedicalHelper/Classes/Rank/RankViewController.swift"
-            timestampString = "494390025.685473"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
-            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
