@@ -24,4 +24,21 @@ class RankHttpTool: NSObject {
                 finished(responseObject: nil, error: error)
         }
     }
+    
+    //  http://api.wws.xywy.com/?act=zhuanjia&fun=DoctorDetail&tag=app&sign=9b7da964e54e330952501c8b44c86f74&id=229086&pagesize=10&pagenum=1&expertid=45716
+    class func doctorDetailData(param: DoctorDetailParam, finished:(responseObject: DoctorDetailModel?, error: NSError?) -> ()) {
+        
+        let manager = CustomAFHTTPSessionManager.share()
+        
+        let url = "http://api.wws.xywy.com/?act=zhuanjia&fun=DoctorDetail&tag=app&sign=9b7da964e54e330952501c8b44c86f74&id=\(param.doctorid!)&pagesize=10&pagenum=1&expertid=\(param.expert_id!)"
+        
+        manager.GET(url, parameters: nil, success: { (_, responseObject) -> Void in
+            let model = DoctorDetailModel(dictionary: responseObject["data"] as! [String : AnyObject])
+            
+            
+            finished(responseObject: model, error: nil)
+            }) { (_, error) -> Void in
+                finished(responseObject: nil, error: error)
+        }
+    }
 }
