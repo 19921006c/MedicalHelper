@@ -7,47 +7,60 @@
 //
 
 import UIKit
-
+import MJRefresh
 class FindHospitalViewController: BaseViewController {
+    
+    @IBOutlet weak var tableView: UITableView?
+    
+    let footer = MJRefreshAutoNormalFooter()
+    
+    var page: Int = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setControllerAttributes()
         
-        setUpUI()
-        
-        
-        FindHospitalTool.findHospitalListData(1) { (responseObject, error) -> () in
-            self.modelArray = responseObject!
+        tableView?.mj_header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: Selector("headerRefresh"))
+        tableView?.mj_header.beginRefreshing()
+    }
+    
+    func headerRefresh(){
+        FindHospitalTool.findHospitalListData(page) { (responseObject, error) -> () in
             
-            self.tableView.reloadData()
+            self.tableView?.mj_header.endRefreshing()
+            
+            if self.modelArray.count == 0{
+                for model in responseObject!{
+                    self.modelArray.append(model)
+                }
+            }else{
+                
+                for newModel in responseObject!{
+                    self.modelArray.insert(newModel, atIndex: 0)
+                }
+                
+            }
+//            var indexArray = [NSIndexPath]()
+//            
+//            for i in 0..<self.modelArray.count{
+//                let indexPath = NSIndexPath(index: i)
+//                indexArray.insert(indexPath, atIndex: i)
+//            }
+//            self.tableView!.reloadRowsAtIndexPaths(indexArray, withRowAnimation: UITableViewRowAnimation.Right)
+            self.tableView?.reloadData()
+            self.page += 1
         }
     }
     
     //设置控制器页面属性
     private func setControllerAttributes(){
         view.backgroundColor = UIColor.whiteColor()
-        
-    }
-    
-    //布局子控件
-    private func setUpUI(){
-        //添加
-        view.addSubview(tableView)
-        //frame
-        tableView.frame = CGRect(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight - kNavigationBarHeight)
+        tableView?.delegate = self
+        tableView?.dataSource = self
     }
     
     //MARK: - lazy
-    
-    private lazy var tableView: UITableView = {
-        let view = UITableView()
-        view.dataSource = self
-        view.delegate = self
-        view.separatorStyle = .None
-        return view
-    }()
     
     private lazy var modelArray = [FindHospitalModel]()
 }

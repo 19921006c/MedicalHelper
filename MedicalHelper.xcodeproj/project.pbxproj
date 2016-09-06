@@ -71,6 +71,7 @@
 		42588B721D7EA51D00C21ADB /* FindHospitalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42588B701D7EA51D00C21ADB /* FindHospitalViewController.xib */; };
 		42588B741D7EA72300C21ADB /* FindHospitalTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42588B731D7EA72300C21ADB /* FindHospitalTool.swift */; };
 		42588B761D7EA90700C21ADB /* FindHospitalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42588B751D7EA90700C21ADB /* FindHospitalModel.swift */; };
+		42588B781D7EC1E700C21ADB /* String+Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42588B771D7EC1E700C21ADB /* String+Hash.swift */; };
 		425E01441D767701000A78B0 /* HttpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425E01431D767701000A78B0 /* HttpTool.swift */; };
 		42BB864C1D77D33000F583CB /* UIImae+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB864B1D77D33000F583CB /* UIImae+Color.swift */; };
 		42BB86571D79224400F583CB /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BB86561D79224400F583CB /* NSString+Hash.m */; };
@@ -166,6 +167,7 @@
 		42588B701D7EA51D00C21ADB /* FindHospitalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindHospitalViewController.xib; sourceTree = "<group>"; };
 		42588B731D7EA72300C21ADB /* FindHospitalTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindHospitalTool.swift; sourceTree = "<group>"; };
 		42588B751D7EA90700C21ADB /* FindHospitalModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindHospitalModel.swift; sourceTree = "<group>"; };
+		42588B771D7EC1E700C21ADB /* String+Hash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Hash.swift"; sourceTree = "<group>"; };
 		425E01431D767701000A78B0 /* HttpTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpTool.swift; sourceTree = "<group>"; };
 		42BB864B1D77D33000F583CB /* UIImae+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImae+Color.swift"; sourceTree = "<group>"; };
 		42BB86551D79224400F583CB /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
@@ -343,6 +345,7 @@
 				42BB86561D79224400F583CB /* NSString+Hash.m */,
 				42588B2A1D7E50C200C21ADB /* LineImageView.swift */,
 				42588B2C1D7E518D00C21ADB /* DividingLineView.swift */,
+				42588B771D7EC1E700C21ADB /* String+Hash.swift */,
 			);
 			name = Tool;
 			path = Classes/Tool;
@@ -791,6 +794,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42588B781D7EC1E700C21ADB /* String+Hash.swift in Sources */,
 				4246FD041D5B2A9A00CB9199 /* NewVersionViewController.swift in Sources */,
 				42BB864C1D77D33000F583CB /* UIImae+Color.swift in Sources */,
 				424C7B3D1D5C00EF00ED62CB /* OrderViewController.swift in Sources */,

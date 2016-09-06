@@ -124,7 +124,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate{
 extension HomeViewController: HomeTableViewHeaderViewDelegate{
     func homeTableViewHeaderViewDidSelectedItem(index: Int) {
         if index == 1 || index == 2{
-            let controller = FindHospitalViewController()
+            let controller = FindHospitalViewController(controllerName: "FindHospitalViewController")
             
             if index == 1{
                 controller.title = "找医院"

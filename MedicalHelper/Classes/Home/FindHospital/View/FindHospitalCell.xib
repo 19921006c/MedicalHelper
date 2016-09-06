@@ -29,7 +29,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="专家声誉" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHz-1q-1mE" userLabel="地址">
-                        <rect key="frame" x="117" y="41" width="203" height="17"/>
+                        <rect key="frame" x="117" y="41" width="167" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
@@ -59,6 +59,7 @@
                     <constraint firstItem="qty-RP-H2a" firstAttribute="bottom" secondItem="mH1-Tg-IyI" secondAttribute="bottom" id="0Gi-bA-OPk"/>
                     <constraint firstAttribute="trailingMargin" secondItem="UHz-1q-1mE" secondAttribute="trailing" id="0wE-bZ-8UA"/>
                     <constraint firstItem="UHz-1q-1mE" firstAttribute="leading" secondItem="mH1-Tg-IyI" secondAttribute="trailing" constant="8" id="56L-vF-wYm"/>
+                    <constraint firstItem="5V3-vL-I3G" firstAttribute="leading" secondItem="UHz-1q-1mE" secondAttribute="trailing" constant="14" id="7ef-dK-JGp"/>
                     <constraint firstItem="5V3-vL-I3G" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="BR3-lA-N7o"/>
                     <constraint firstItem="mH1-Tg-IyI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="FKW-HM-Qqn"/>
                     <constraint firstItem="UHz-1q-1mE" firstAttribute="centerY" secondItem="mH1-Tg-IyI" secondAttribute="centerY" id="PPV-fy-20D"/>
@@ -79,6 +80,7 @@
                 <variation key="default">
                     <mask key="constraints">
                         <exclude reference="0wE-bZ-8UA"/>
+                        <exclude reference="vAc-uK-OZC"/>
                         <exclude reference="eJc-kO-gsd"/>
                     </mask>
                 </variation>
