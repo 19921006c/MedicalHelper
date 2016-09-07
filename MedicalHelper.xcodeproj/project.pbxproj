@@ -65,13 +65,16 @@
 		42588B651D7EA34100C21ADB /* HotSectionExpertCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42588B4F1D7EA34100C21ADB /* HotSectionExpertCollectionCell.xib */; };
 		42588B661D7EA34100C21ADB /* HotSectionExpertCollectionCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42588B501D7EA34100C21ADB /* HotSectionExpertCollectionCellModel.swift */; };
 		42588B671D7EA34100C21ADB /* HomeTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42588B521D7EA34100C21ADB /* HomeTableViewHeaderView.swift */; };
-		42588B6D1D7EA50200C21ADB /* FindHospitalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42588B6B1D7EA50200C21ADB /* FindHospitalCell.swift */; };
-		42588B6E1D7EA50200C21ADB /* FindHospitalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42588B6C1D7EA50200C21ADB /* FindHospitalCell.xib */; };
-		42588B711D7EA51D00C21ADB /* FindHospitalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42588B6F1D7EA51D00C21ADB /* FindHospitalViewController.swift */; };
-		42588B721D7EA51D00C21ADB /* FindHospitalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42588B701D7EA51D00C21ADB /* FindHospitalViewController.xib */; };
-		42588B741D7EA72300C21ADB /* FindHospitalTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42588B731D7EA72300C21ADB /* FindHospitalTool.swift */; };
-		42588B761D7EA90700C21ADB /* FindHospitalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42588B751D7EA90700C21ADB /* FindHospitalModel.swift */; };
 		42588B781D7EC1E700C21ADB /* String+Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42588B771D7EC1E700C21ADB /* String+Hash.swift */; };
+		42588B801D7FAB0700C21ADB /* FindExpertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42588B7E1D7FAB0700C21ADB /* FindExpertController.swift */; };
+		42588B811D7FAB0700C21ADB /* FindExpertController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42588B7F1D7FAB0700C21ADB /* FindExpertController.xib */; };
+		42588B8D1D7FAB5B00C21ADB /* FindHospitalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42588B841D7FAB5B00C21ADB /* FindHospitalViewController.swift */; };
+		42588B8E1D7FAB5B00C21ADB /* FindHospitalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42588B851D7FAB5B00C21ADB /* FindHospitalViewController.xib */; };
+		42588B8F1D7FAB5B00C21ADB /* FindHospitalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42588B871D7FAB5B00C21ADB /* FindHospitalModel.swift */; };
+		42588B901D7FAB5B00C21ADB /* FindHospitalTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42588B891D7FAB5B00C21ADB /* FindHospitalTool.swift */; };
+		42588B911D7FAB5B00C21ADB /* FindHospitalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42588B8B1D7FAB5B00C21ADB /* FindHospitalCell.swift */; };
+		42588B921D7FAB5B00C21ADB /* FindHospitalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42588B8C1D7FAB5B00C21ADB /* FindHospitalCell.xib */; };
+		42588B961D7FADAA00C21ADB /* FindExpertTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42588B951D7FADA900C21ADB /* FindExpertTool.swift */; };
 		425E01441D767701000A78B0 /* HttpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425E01431D767701000A78B0 /* HttpTool.swift */; };
 		42BB864C1D77D33000F583CB /* UIImae+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB864B1D77D33000F583CB /* UIImae+Color.swift */; };
 		42BB86571D79224400F583CB /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BB86561D79224400F583CB /* NSString+Hash.m */; };
@@ -161,13 +164,16 @@
 		42588B4F1D7EA34100C21ADB /* HotSectionExpertCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HotSectionExpertCollectionCell.xib; sourceTree = "<group>"; };
 		42588B501D7EA34100C21ADB /* HotSectionExpertCollectionCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HotSectionExpertCollectionCellModel.swift; sourceTree = "<group>"; };
 		42588B521D7EA34100C21ADB /* HomeTableViewHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewHeaderView.swift; sourceTree = "<group>"; };
-		42588B6B1D7EA50200C21ADB /* FindHospitalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindHospitalCell.swift; sourceTree = "<group>"; };
-		42588B6C1D7EA50200C21ADB /* FindHospitalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindHospitalCell.xib; sourceTree = "<group>"; };
-		42588B6F1D7EA51D00C21ADB /* FindHospitalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindHospitalViewController.swift; sourceTree = "<group>"; };
-		42588B701D7EA51D00C21ADB /* FindHospitalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindHospitalViewController.xib; sourceTree = "<group>"; };
-		42588B731D7EA72300C21ADB /* FindHospitalTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindHospitalTool.swift; sourceTree = "<group>"; };
-		42588B751D7EA90700C21ADB /* FindHospitalModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindHospitalModel.swift; sourceTree = "<group>"; };
 		42588B771D7EC1E700C21ADB /* String+Hash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Hash.swift"; sourceTree = "<group>"; };
+		42588B7E1D7FAB0700C21ADB /* FindExpertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindExpertController.swift; sourceTree = "<group>"; };
+		42588B7F1D7FAB0700C21ADB /* FindExpertController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindExpertController.xib; sourceTree = "<group>"; };
+		42588B841D7FAB5B00C21ADB /* FindHospitalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindHospitalViewController.swift; sourceTree = "<group>"; };
+		42588B851D7FAB5B00C21ADB /* FindHospitalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindHospitalViewController.xib; sourceTree = "<group>"; };
+		42588B871D7FAB5B00C21ADB /* FindHospitalModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindHospitalModel.swift; sourceTree = "<group>"; };
+		42588B891D7FAB5B00C21ADB /* FindHospitalTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindHospitalTool.swift; sourceTree = "<group>"; };
+		42588B8B1D7FAB5B00C21ADB /* FindHospitalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindHospitalCell.swift; sourceTree = "<group>"; };
+		42588B8C1D7FAB5B00C21ADB /* FindHospitalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindHospitalCell.xib; sourceTree = "<group>"; };
+		42588B951D7FADA900C21ADB /* FindExpertTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindExpertTool.swift; sourceTree = "<group>"; };
 		425E01431D767701000A78B0 /* HttpTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpTool.swift; sourceTree = "<group>"; };
 		42BB864B1D77D33000F583CB /* UIImae+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImae+Color.swift"; sourceTree = "<group>"; };
 		42BB86551D79224400F583CB /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
@@ -273,8 +279,9 @@
 		4246FCF01D5B256000CB9199 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				42588B821D7FAB5B00C21ADB /* FindHospital(找医院) */,
+				42588B791D7FAAE300C21ADB /* FindExpert(找专家) */,
 				42588B341D7EA34100C21ADB /* Controller */,
-				42588B371D7EA34100C21ADB /* FindHospital */,
 				42588B3B1D7EA34100C21ADB /* Model */,
 				42588B3C1D7EA34100C21ADB /* View */,
 			);
@@ -462,17 +469,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		42588B371D7EA34100C21ADB /* FindHospital */ = {
-			isa = PBXGroup;
-			children = (
-				42588B681D7EA40800C21ADB /* Controller */,
-				42588B691D7EA40800C21ADB /* Model */,
-				42588B6A1D7EA40800C21ADB /* View */,
-				42588B731D7EA72300C21ADB /* FindHospitalTool.swift */,
-			);
-			path = FindHospital;
-			sourceTree = "<group>";
-		};
 		42588B3B1D7EA34100C21ADB /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -551,28 +547,89 @@
 			path = "TwoCell(找医院)";
 			sourceTree = "<group>";
 		};
-		42588B681D7EA40800C21ADB /* Controller */ = {
+		42588B791D7FAAE300C21ADB /* FindExpert(找专家) */ = {
 			isa = PBXGroup;
 			children = (
-				42588B6F1D7EA51D00C21ADB /* FindHospitalViewController.swift */,
-				42588B701D7EA51D00C21ADB /* FindHospitalViewController.xib */,
+				42588B7A1D7FAAE300C21ADB /* Controller */,
+				42588B7B1D7FAAE300C21ADB /* Model */,
+				42588B7C1D7FAAE300C21ADB /* Tool */,
+				42588B7D1D7FAAE300C21ADB /* View */,
+			);
+			path = "FindExpert(找专家)";
+			sourceTree = "<group>";
+		};
+		42588B7A1D7FAAE300C21ADB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				42588B7E1D7FAB0700C21ADB /* FindExpertController.swift */,
+				42588B7F1D7FAB0700C21ADB /* FindExpertController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		42588B691D7EA40800C21ADB /* Model */ = {
+		42588B7B1D7FAAE300C21ADB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				42588B751D7EA90700C21ADB /* FindHospitalModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		42588B6A1D7EA40800C21ADB /* View */ = {
+		42588B7C1D7FAAE300C21ADB /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				42588B6B1D7EA50200C21ADB /* FindHospitalCell.swift */,
-				42588B6C1D7EA50200C21ADB /* FindHospitalCell.xib */,
+				42588B951D7FADA900C21ADB /* FindExpertTool.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		42588B7D1D7FAAE300C21ADB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		42588B821D7FAB5B00C21ADB /* FindHospital(找医院) */ = {
+			isa = PBXGroup;
+			children = (
+				42588B831D7FAB5B00C21ADB /* Controller */,
+				42588B861D7FAB5B00C21ADB /* Model */,
+				42588B881D7FAB5B00C21ADB /* Tool */,
+				42588B8A1D7FAB5B00C21ADB /* View */,
+			);
+			path = "FindHospital(找医院)";
+			sourceTree = "<group>";
+		};
+		42588B831D7FAB5B00C21ADB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				42588B841D7FAB5B00C21ADB /* FindHospitalViewController.swift */,
+				42588B851D7FAB5B00C21ADB /* FindHospitalViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		42588B861D7FAB5B00C21ADB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42588B871D7FAB5B00C21ADB /* FindHospitalModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		42588B881D7FAB5B00C21ADB /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				42588B891D7FAB5B00C21ADB /* FindHospitalTool.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		42588B8A1D7FAB5B00C21ADB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				42588B8B1D7FAB5B00C21ADB /* FindHospitalCell.swift */,
+				42588B8C1D7FAB5B00C21ADB /* FindHospitalCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -708,13 +765,14 @@
 				424C7B3E1D5C00EF00ED62CB /* OrderViewController.xib in Resources */,
 				4246FCC91D5B1F4200CB9199 /* Assets.xcassets in Resources */,
 				42588B1F1D7D728000C21ADB /* DoctorDetailController.xib in Resources */,
-				42588B6E1D7EA50200C21ADB /* FindHospitalCell.xib in Resources */,
+				42588B811D7FAB0700C21ADB /* FindExpertController.xib in Resources */,
 				42588B291D7E483800C21ADB /* DoctorDetailFirstCell.xib in Resources */,
-				42588B721D7EA51D00C21ADB /* FindHospitalViewController.xib in Resources */,
+				42588B8E1D7FAB5B00C21ADB /* FindHospitalViewController.xib in Resources */,
 				42588B601D7EA34100C21ADB /* HomeCarouselCell.xib in Resources */,
 				42588B171D7D457900C21ADB /* HospitalDoctorListViewController.xib in Resources */,
 				42588B5D1D7EA34100C21ADB /* HotSectionCollectionCell.xib in Resources */,
 				424C7B361D5C00D500ED62CB /* ProfileViewController.xib in Resources */,
+				42588B921D7FAB5B00C21ADB /* FindHospitalCell.xib in Resources */,
 				42588B5B1D7EA34100C21ADB /* HotSectionCell.xib in Resources */,
 				42588B0F1D7D07E200C21ADB /* HospitalDoctorListCell.xib in Resources */,
 				42588B611D7EA34100C21ADB /* hotDoct.plist in Resources */,
@@ -800,10 +858,9 @@
 				424C7B3D1D5C00EF00ED62CB /* OrderViewController.swift in Sources */,
 				42588B581D7EA34100C21ADB /* ExpertTalkCell.swift in Sources */,
 				42588B671D7EA34100C21ADB /* HomeTableViewHeaderView.swift in Sources */,
+				42588B801D7FAB0700C21ADB /* FindExpertController.swift in Sources */,
 				42588B251D7D74E100C21ADB /* DoctorDetailModel.swift in Sources */,
-				42588B711D7EA51D00C21ADB /* FindHospitalViewController.swift in Sources */,
 				42588B2B1D7E50C200C21ADB /* LineImageView.swift in Sources */,
-				42588B741D7EA72300C21ADB /* FindHospitalTool.swift in Sources */,
 				42588B081D7D07A100C21ADB /* RandResultModel.swift in Sources */,
 				42588B2D1D7E518D00C21ADB /* DividingLineView.swift in Sources */,
 				42588B0A1D7D07A100C21ADB /* RankTableViewCell.swift in Sources */,
@@ -813,21 +870,23 @@
 				42588B091D7D07A100C21ADB /* RankHttpTool.swift in Sources */,
 				42309F921D62AA0F005F79BD /* CustomAFHTTPSessionManager.swift in Sources */,
 				42588B5C1D7EA34100C21ADB /* HotSectionCollectionCell.swift in Sources */,
-				42588B6D1D7EA50200C21ADB /* FindHospitalCell.swift in Sources */,
 				42588B301D7E525B00C21ADB /* DoctorDetailSecondCell.swift in Sources */,
 				42588B071D7D07A100C21ADB /* HospitalDoctorListModel.swift in Sources */,
 				42588B281D7E483800C21ADB /* DoctorDetailFirstCell.swift in Sources */,
+				42588B911D7FAB5B00C21ADB /* FindHospitalCell.swift in Sources */,
+				42588B961D7FADAA00C21ADB /* FindExpertTool.swift in Sources */,
 				4246FCFD1D5B27CE00CB9199 /* NewVersionTool.swift in Sources */,
 				424C7B421D5C0FB100ED62CB /* BaseViewController.swift in Sources */,
 				4246FCF91D5B25AE00CB9199 /* MainNavigationController.swift in Sources */,
+				42588B901D7FAB5B00C21ADB /* FindHospitalTool.swift in Sources */,
 				425E01441D767701000A78B0 /* HttpTool.swift in Sources */,
 				42588B641D7EA34100C21ADB /* HotSectionExpertCollectionCell.swift in Sources */,
 				42588B331D7E5C7000C21ADB /* DoctorDetailSubModel.swift in Sources */,
 				42588B5E1D7EA34100C21ADB /* HotSectionCollectionCellModel.swift in Sources */,
 				4246FCF71D5B259800CB9199 /* MainTabBarController.swift in Sources */,
 				42BB86571D79224400F583CB /* NSString+Hash.m in Sources */,
-				42588B761D7EA90700C21ADB /* FindHospitalModel.swift in Sources */,
 				42588B5F1D7EA34100C21ADB /* HomeCarouselCell.swift in Sources */,
+				42588B8F1D7FAB5B00C21ADB /* FindHospitalModel.swift in Sources */,
 				42DF9C4F1D5DC4E2007550B2 /* bridge.m in Sources */,
 				424C7B401D5C028500ED62CB /* UIColor+Category.swift in Sources */,
 				42588B0E1D7D07E200C21ADB /* HospitalDoctorListCell.swift in Sources */,
@@ -835,6 +894,7 @@
 				42588B531D7EA34100C21ADB /* HomeViewController.swift in Sources */,
 				42588B5A1D7EA34100C21ADB /* HotSectionCell.swift in Sources */,
 				42309FDA1D62EF61005F79BD /* UIBarButtonItem+Category.swift in Sources */,
+				42588B8D1D7FAB5B00C21ADB /* FindHospitalViewController.swift in Sources */,
 				42588B1E1D7D728000C21ADB /* DoctorDetailController.swift in Sources */,
 				42588B621D7EA34100C21ADB /* HotSectionExpertCell.swift in Sources */,
 				42588B161D7D457900C21ADB /* HospitalDoctorListViewController.swift in Sources */,

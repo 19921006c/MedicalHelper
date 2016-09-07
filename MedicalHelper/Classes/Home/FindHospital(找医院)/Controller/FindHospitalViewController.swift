@@ -41,13 +41,6 @@ class FindHospitalViewController: BaseViewController {
                 }
                 
             }
-//            var indexArray = [NSIndexPath]()
-//            
-//            for i in 0..<self.modelArray.count{
-//                let indexPath = NSIndexPath(index: i)
-//                indexArray.insert(indexPath, atIndex: i)
-//            }
-//            self.tableView!.reloadRowsAtIndexPaths(indexArray, withRowAnimation: UITableViewRowAnimation.Right)
             self.tableView?.reloadData()
             self.page += 1
         }

@@ -5,9 +5,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HospitalDoctorListViewController" customModule="MedicalHelper" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FindExpertController" customModule="MedicalHelper" customModuleProvider="target">
             <connections>
-                <outlet property="tableView" destination="ZhZ-bq-brP" id="OiI-3M-iSS"/>
+                <outlet property="tableView" destination="241-qv-uvv" id="eWK-Ts-9NJ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,17 +16,17 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZhZ-bq-brP">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="241-qv-uvv">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="ZhZ-bq-brP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PVQ-od-Kic"/>
-                <constraint firstAttribute="trailing" secondItem="ZhZ-bq-brP" secondAttribute="trailing" id="dIo-dG-bwG"/>
-                <constraint firstItem="ZhZ-bq-brP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="lCq-zV-Fbm"/>
-                <constraint firstAttribute="bottom" secondItem="ZhZ-bq-brP" secondAttribute="bottom" id="sOZ-f5-olX"/>
+                <constraint firstItem="241-qv-uvv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5wx-Mb-TKo"/>
+                <constraint firstAttribute="bottom" secondItem="241-qv-uvv" secondAttribute="bottom" id="TkB-mA-TOV"/>
+                <constraint firstItem="241-qv-uvv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VIn-1D-I01"/>
+                <constraint firstAttribute="trailing" secondItem="241-qv-uvv" secondAttribute="trailing" id="Voq-fl-MWG"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
         </view>
