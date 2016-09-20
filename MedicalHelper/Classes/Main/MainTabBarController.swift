@@ -23,10 +23,10 @@ class MainTabBarController: UITabBarController {
         addAloneChildViewController(HomeViewController(controllerName: "HomeViewController"), norImageName: "TabBar_Home", selectedImageName: "TabBar_HomeSelected", title: "首页")
         //1.2排行榜
         addAloneChildViewController(RankViewController(controllerName: "RankViewController"), norImageName: "TabBar_Rank", selectedImageName: "TabBar_RankSelected", title: "排行榜")
-        //1.3我的订单
-        addAloneChildViewController(OrderViewController(controllerName: "OrderViewController"), norImageName: "TabBar_Order", selectedImageName: "TabBar_OrderSelected", title: "我的订单")
-        //1.4我
-        addAloneChildViewController(ProfileViewController(controllerName: "ProfileViewController"), norImageName: "TabBar_Profile", selectedImageName: "TabBar_ProfileSelected", title: "我")
+//        //1.3我的订单
+//        addAloneChildViewController(OrderViewController(controllerName: "OrderViewController"), norImageName: "TabBar_Order", selectedImageName: "TabBar_OrderSelected", title: "我的订单")
+//        //1.4我
+//        addAloneChildViewController(ProfileViewController(controllerName: "ProfileViewController"), norImageName: "TabBar_Profile", selectedImageName: "TabBar_ProfileSelected", title: "我")
     }
     
     //添加单个控制器

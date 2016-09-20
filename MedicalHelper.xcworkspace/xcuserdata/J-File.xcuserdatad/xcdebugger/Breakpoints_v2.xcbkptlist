@@ -58,7 +58,7 @@
                   moduleName = "MedicalHelper"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/J-File/Desktop/CodeLibrary/MedicalHelper/MedicalHelper/Classes/Tool/CustomAFHTTPSessionManager.swift"
-                  timestampString = "494933051.195753"
+                  timestampString = "496051515.038546"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "35"
@@ -73,7 +73,7 @@
                   moduleName = "MedicalHelper"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/J-File/Desktop/CodeLibrary/MedicalHelper/MedicalHelper/Classes/Tool/CustomAFHTTPSessionManager.swift"
-                  timestampString = "494933051.195946"
+                  timestampString = "496051515.038707"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "36"
@@ -138,70 +138,6 @@
             startingLineNumber = "21"
             endingLineNumber = "21"
             landmarkName = "layoutSubviews()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MedicalHelper/Classes/Rank/HospitalDoctorList/Controller/HospitalDoctorListViewController.swift"
-            timestampString = "494932573.36241"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "tableView(_:cellForRowAtIndexPath:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MedicalHelper/Classes/Rank/HospitalDoctorList/Controller/HospitalDoctorListViewController.swift"
-            timestampString = "494932573.36241"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "tableView(_:heightForRowAtIndexPath:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MedicalHelper/Classes/Rank/HospitalDoctorList/Controller/HospitalDoctorListViewController.swift"
-            timestampString = "494932573.36241"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MedicalHelper/Classes/Rank/HospitalDoctorList/Controller/HospitalDoctorListViewController.swift"
-            timestampString = "494932573.36241"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

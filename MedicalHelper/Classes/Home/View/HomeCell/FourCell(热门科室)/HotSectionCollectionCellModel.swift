@@ -14,6 +14,8 @@ class HotSectionCollectionCellModel: NSObject {
     
     var photoName: String?
     
+    var id: String?
+    
     init(dictionary: [String : String]) {
         super.init()
         setValuesForKeysWithDictionary(dictionary)
@@ -23,7 +25,7 @@ class HotSectionCollectionCellModel: NSObject {
         
     }
     
-    var properties = ["title", "photoName"]
+    var properties = ["title", "photoName", "id"]
     
     override var description: String{
         let dictionary = dictionaryWithValuesForKeys(properties)

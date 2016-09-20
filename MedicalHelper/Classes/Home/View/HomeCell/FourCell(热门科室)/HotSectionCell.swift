@@ -29,6 +29,7 @@ class HotSectionCell: UITableViewCell {
     //设置collectionview
     private func setUpCollectionView(){
         collectionView.dataSource = self
+        collectionView.delegate = self
         collectionView.registerNib(UINib(nibName: HotSectionCollectionCellIdentifier, bundle: nil), forCellWithReuseIdentifier: HotSectionCollectionCellIdentifier)
         collectionView.collectionViewLayout = HotSectionCollectionCellLayout()
         collectionView.backgroundColor = UIColor.colorWithHexString("#d6d6d6")
@@ -49,12 +50,12 @@ class HotSectionCell: UITableViewCell {
     //
     private lazy var dictionaryArray: NSMutableArray = {
         let tmpArray = NSMutableArray(array: [
-            ["title" : "内科","photoName" :"Depart11"],
-            ["title" : "外科","photoName" :"Depart12"],
-            ["title" : "骨外科","photoName" :"Depart13"],
-            ["title" : "肿瘤科","photoName" :"Depart14"],
-            ["title" : "中医学","photoName" :"Depart15"],
-            ["title" : "妇产科","photoName" :"Depart16"]
+            ["title" : "普通内科","photoName" :"Depart11", "id" : "45"],
+            ["title" : "普外科","photoName" :"Depart12", "id" : "44"],
+            ["title" : "骨科","photoName" :"Depart13", "id" : "74"],
+            ["title" : "肿瘤综合科","photoName" :"Depart14", "id" : "117"],
+            ["title" : "中医科","photoName" :"Depart15", "id" : "148"],
+            ["title" : "妇产科","photoName" :"Depart16", "id" : "67"]
             ])
         
         
@@ -63,7 +64,7 @@ class HotSectionCell: UITableViewCell {
     private lazy var dataSourceArray: NSMutableArray = NSMutableArray()
 }
 
-extension HotSectionCell: UICollectionViewDataSource{
+extension HotSectionCell: UICollectionViewDataSource, UICollectionViewDelegate{
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return dataSourceArray.count
     }
@@ -73,6 +74,15 @@ extension HotSectionCell: UICollectionViewDataSource{
         cell.contentView.backgroundColor = UIColor.whiteColor()
         cell.model = dataSourceArray[indexPath.row] as? HotSectionCollectionCellModel
         return cell
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        let model = dataSourceArray[indexPath.row] as? HotSectionCollectionCellModel
+        
+        let vc = FindExpertController(controllerName: "FindExpertController")
+        vc.id = model!.id
+        vc.title = model?.title
+        Common.findNearsetViewController(self).navigationController?.pushViewController(vc, animated: true)
     }
 }
 

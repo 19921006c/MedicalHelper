@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SVProgressHUD
 class RankViewController: BaseViewController {
     
     @IBOutlet weak var tableView: UITableView!
@@ -18,9 +18,10 @@ class RankViewController: BaseViewController {
         super.viewDidLoad()
         
         //获取数据
+        SVProgressHUD.show()
         HttpTool.loadSearchInfo { (responseObject, error) in
+            SVProgressHUD.dismiss()
             self.modelArray = responseObject
-            
             self.tableView.reloadData()
         }
         

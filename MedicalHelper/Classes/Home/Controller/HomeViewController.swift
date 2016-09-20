@@ -132,6 +132,7 @@ extension HomeViewController: HomeTableViewHeaderViewDelegate{
             }else{
                 let controller = FindExpertController(controllerName: "FindExpertController")
                 controller.title = "找专家"
+                controller.id = ""
                 navigationController?.pushViewController(controller, animated: true)
             }
             return

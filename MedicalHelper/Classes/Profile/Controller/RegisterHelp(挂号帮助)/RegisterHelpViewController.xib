@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterHelpViewController" customModule="MedicalHelper" customModuleProvider="target">
+            <connections>
+                <outlet property="textView" destination="o1V-xS-OJu" id="TrU-PJ-r0Q"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="o1V-xS-OJu">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                    <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                    <mutableString key="text">1.什么是网上预约专家？
+答：网上预约专家（加号服务）省去排队的费时费力，通过手机预约平台足不出户完成挂号。
+
+2.预约流程是什么样的？
+答：选择预约专家的门诊时间→填写预约专家申请单→专家确认→收到提示成功短信→就诊前一天登陆个人中心确认就诊领取加号凭证→持短信凭证和就诊人身份证找专家领取加号单→凭加号单门诊挂号就诊。
+
+3.网上预约专家服务是免费的吗？
+答：是的，手机预约专家（加号服务）为免费服务项目。
+
+4.预约专家需要提前几天预约？
+答：预约专家只提供的四天以后的门诊预约，诊前四天提交您的预约申请。
+
+5.填写真实的病情资料有什么作用？
+答：一、为保证您能成功预约到专家号，需要您填写详尽的病情资料供专家做初步病情了解，是否通过您的加号申请。
+
+6.预约专家申请提交成功是预约成功吗？
+答：预约专家申请提交后，专家网工作人员会根据您提交的基本信息和病情资料审核是否符合专家的就诊要求，并联系专家是否同意加号，专家同意后会通过系统短信提示您预约成功。
+
+7.收到预约成功短信如何就诊？
+答：申请成功短信并非就诊凭证短信。专家同意您的预约申请后专家网短信平台会给您发送申请成功短信，在就诊时间前一天您必须登陆个人中心领取凭证短信，然后按照凭证短信提示的时间、地址，找专家领取加号单，到门诊挂号室挂号，按顺序等候就诊。
+
+9.不能及时就诊该怎么取消预约订单？
+答：如果出现特殊情况使您不能在约定的时间就诊，请您在就诊前一天16:00前登陆个人中心取消加号订单。
+
+10.什么是爽约？
+答：爽约是指没有按网上规定的流程到医院找专家就诊。
+为保障医疗资源不被浪费，请您务必在约定时间到医院就诊。</mutableString>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="o1V-xS-OJu" secondAttribute="trailing" id="Lw3-bN-5YB"/>
+                <constraint firstItem="o1V-xS-OJu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="U8W-k8-cWR"/>
+                <constraint firstItem="o1V-xS-OJu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xkR-64-fm9"/>
+                <constraint firstAttribute="bottom" secondItem="o1V-xS-OJu" secondAttribute="bottom" id="zys-hS-RII"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

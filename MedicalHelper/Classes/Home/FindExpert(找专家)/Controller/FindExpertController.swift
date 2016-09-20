@@ -13,6 +13,7 @@ class FindExpertController: BaseViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var page = 1
+    var id: String!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,8 +25,7 @@ class FindExpertController: BaseViewController {
     }
     
     func headerRefresh(){
-        FindExpertTool.findExpertRequest(page) { (models, error) -> () in
-            
+        FindExpertTool.findExpertRequest(page, id: id) { (models, error) in
             self.tableView?.mj_header.endRefreshing()
             
             if self.modelArray.count == 0{
@@ -44,10 +44,17 @@ class FindExpertController: BaseViewController {
         }
     }
     
+    func rightDown(){
+        let vc = SearchDoctorViewController(controllerName: "SearchDoctorViewController")
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     //设置页面属性
     private func setAttributes(){
         tableView.dataSource = self
         tableView.delegate = self
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem.itemWithNorImageName("Search", highlightedImageName: "Search02", target: self, action: Selector("rightDown"))
     }
     
     //MARK: - 懒加载

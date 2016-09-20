@@ -19,8 +19,6 @@
 		4246FCFD1D5B27CE00CB9199 /* NewVersionTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4246FCFC1D5B27CE00CB9199 /* NewVersionTool.swift */; };
 		4246FD041D5B2A9A00CB9199 /* NewVersionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4246FD021D5B2A9A00CB9199 /* NewVersionViewController.swift */; };
 		4246FD051D5B2A9A00CB9199 /* NewVersionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4246FD031D5B2A9A00CB9199 /* NewVersionViewController.xib */; };
-		424C7B351D5C00D500ED62CB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C7B331D5C00D500ED62CB /* ProfileViewController.swift */; };
-		424C7B361D5C00D500ED62CB /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 424C7B341D5C00D500ED62CB /* ProfileViewController.xib */; };
 		424C7B3D1D5C00EF00ED62CB /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C7B3B1D5C00EF00ED62CB /* OrderViewController.swift */; };
 		424C7B3E1D5C00EF00ED62CB /* OrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 424C7B3C1D5C00EF00ED62CB /* OrderViewController.xib */; };
 		424C7B401D5C028500ED62CB /* UIColor+Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424C7B3F1D5C028500ED62CB /* UIColor+Category.swift */; };
@@ -78,6 +76,15 @@
 		425E01441D767701000A78B0 /* HttpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425E01431D767701000A78B0 /* HttpTool.swift */; };
 		42BB864C1D77D33000F583CB /* UIImae+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BB864B1D77D33000F583CB /* UIImae+Color.swift */; };
 		42BB86571D79224400F583CB /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BB86561D79224400F583CB /* NSString+Hash.m */; };
+		42DC39471D810B1C005B893C /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC39461D810B1C005B893C /* ProfileModel.swift */; };
+		42DC394A1D810E86005B893C /* ProfileViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC39481D810E86005B893C /* ProfileViewControllerCell.swift */; };
+		42DC394B1D810E86005B893C /* ProfileViewControllerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DC39491D810E86005B893C /* ProfileViewControllerCell.xib */; };
+		42DC395E1D814DAC005B893C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC395C1D814DAC005B893C /* ProfileViewController.swift */; };
+		42DC395F1D814DAC005B893C /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DC395D1D814DAC005B893C /* ProfileViewController.xib */; };
+		42DC39641D814EA2005B893C /* RegisterHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC39621D814EA2005B893C /* RegisterHelpViewController.swift */; };
+		42DC39651D814EA2005B893C /* RegisterHelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DC39631D814EA2005B893C /* RegisterHelpViewController.xib */; };
+		42DC396C1D815AC5005B893C /* SearchDoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC396A1D815AC5005B893C /* SearchDoctorViewController.swift */; };
+		42DC396D1D815AC5005B893C /* SearchDoctorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42DC396B1D815AC5005B893C /* SearchDoctorViewController.xib */; };
 		42DF9C4F1D5DC4E2007550B2 /* bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DF9C4E1D5DC4E2007550B2 /* bridge.m */; };
 		50B2243A63CBE4834EAD26CC /* Pods_MedicalHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 611AB5006DCB9452D5C576D1 /* Pods_MedicalHelper.framework */; };
 /* End PBXBuildFile section */
@@ -118,8 +125,6 @@
 		4246FCFC1D5B27CE00CB9199 /* NewVersionTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewVersionTool.swift; sourceTree = "<group>"; };
 		4246FD021D5B2A9A00CB9199 /* NewVersionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewVersionViewController.swift; sourceTree = "<group>"; };
 		4246FD031D5B2A9A00CB9199 /* NewVersionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewVersionViewController.xib; sourceTree = "<group>"; };
-		424C7B331D5C00D500ED62CB /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		424C7B341D5C00D500ED62CB /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		424C7B3B1D5C00EF00ED62CB /* OrderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		424C7B3C1D5C00EF00ED62CB /* OrderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderViewController.xib; sourceTree = "<group>"; };
 		424C7B3F1D5C028500ED62CB /* UIColor+Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Category.swift"; sourceTree = "<group>"; };
@@ -178,6 +183,15 @@
 		42BB864B1D77D33000F583CB /* UIImae+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImae+Color.swift"; sourceTree = "<group>"; };
 		42BB86551D79224400F583CB /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
 		42BB86561D79224400F583CB /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
+		42DC39461D810B1C005B893C /* ProfileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		42DC39481D810E86005B893C /* ProfileViewControllerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewControllerCell.swift; sourceTree = "<group>"; };
+		42DC39491D810E86005B893C /* ProfileViewControllerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewControllerCell.xib; sourceTree = "<group>"; };
+		42DC395C1D814DAC005B893C /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		42DC395D1D814DAC005B893C /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		42DC39621D814EA2005B893C /* RegisterHelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterHelpViewController.swift; sourceTree = "<group>"; };
+		42DC39631D814EA2005B893C /* RegisterHelpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterHelpViewController.xib; sourceTree = "<group>"; };
+		42DC396A1D815AC5005B893C /* SearchDoctorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchDoctorViewController.swift; sourceTree = "<group>"; };
+		42DC396B1D815AC5005B893C /* SearchDoctorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchDoctorViewController.xib; sourceTree = "<group>"; };
 		42DF9C4D1D5DC4E2007550B2 /* MedicalHelper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MedicalHelper-Bridging-Header.h"; sourceTree = "<group>"; };
 		42DF9C4E1D5DC4E2007550B2 /* bridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bridge.m; sourceTree = "<group>"; };
 		611AB5006DCB9452D5C576D1 /* Pods_MedicalHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MedicalHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -279,6 +293,7 @@
 		4246FCF01D5B256000CB9199 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				42DC39661D815AB2005B893C /* SearchDoctor */,
 				42588B821D7FAB5B00C21ADB /* FindHospital(找医院) */,
 				42588B791D7FAAE300C21ADB /* FindExpert(找专家) */,
 				42588B341D7EA34100C21ADB /* Controller */,
@@ -315,8 +330,9 @@
 		4246FCF31D5B256000CB9199 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				424C7B331D5C00D500ED62CB /* ProfileViewController.swift */,
-				424C7B341D5C00D500ED62CB /* ProfileViewController.xib */,
+				42DC39431D810AFA005B893C /* Controller */,
+				42DC39441D810AFA005B893C /* Model */,
+				42DC39451D810AFA005B893C /* View */,
 			);
 			name = Profile;
 			path = Classes/Profile;
@@ -634,6 +650,195 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		42DC39431D810AFA005B893C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				42DC395C1D814DAC005B893C /* ProfileViewController.swift */,
+				42DC395D1D814DAC005B893C /* ProfileViewController.xib */,
+				42DC394C1D814D91005B893C /* FeedBack(意见反馈) */,
+				42DC39501D814D91005B893C /* InviteFriend(邀请好友) */,
+				42DC39541D814D91005B893C /* RegisterHelp(挂号帮助) */,
+				42DC39581D814D91005B893C /* Setting(设置) */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		42DC39441D810AFA005B893C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42DC39461D810B1C005B893C /* ProfileModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		42DC39451D810AFA005B893C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				42DC39481D810E86005B893C /* ProfileViewControllerCell.swift */,
+				42DC39491D810E86005B893C /* ProfileViewControllerCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		42DC394C1D814D91005B893C /* FeedBack(意见反馈) */ = {
+			isa = PBXGroup;
+			children = (
+				42DC394D1D814D91005B893C /* Controller */,
+				42DC394E1D814D91005B893C /* Model */,
+				42DC394F1D814D91005B893C /* View */,
+			);
+			path = "FeedBack(意见反馈)";
+			sourceTree = "<group>";
+		};
+		42DC394D1D814D91005B893C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		42DC394E1D814D91005B893C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		42DC394F1D814D91005B893C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		42DC39501D814D91005B893C /* InviteFriend(邀请好友) */ = {
+			isa = PBXGroup;
+			children = (
+				42DC39511D814D91005B893C /* Controller */,
+				42DC39521D814D91005B893C /* Model */,
+				42DC39531D814D91005B893C /* View */,
+			);
+			path = "InviteFriend(邀请好友)";
+			sourceTree = "<group>";
+		};
+		42DC39511D814D91005B893C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		42DC39521D814D91005B893C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		42DC39531D814D91005B893C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		42DC39541D814D91005B893C /* RegisterHelp(挂号帮助) */ = {
+			isa = PBXGroup;
+			children = (
+				42DC39551D814D91005B893C /* Controller */,
+				42DC39561D814D91005B893C /* Model */,
+				42DC39571D814D91005B893C /* View */,
+				42DC39621D814EA2005B893C /* RegisterHelpViewController.swift */,
+				42DC39631D814EA2005B893C /* RegisterHelpViewController.xib */,
+			);
+			path = "RegisterHelp(挂号帮助)";
+			sourceTree = "<group>";
+		};
+		42DC39551D814D91005B893C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		42DC39561D814D91005B893C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		42DC39571D814D91005B893C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		42DC39581D814D91005B893C /* Setting(设置) */ = {
+			isa = PBXGroup;
+			children = (
+				42DC39591D814D91005B893C /* Controller */,
+				42DC395A1D814D91005B893C /* Model */,
+				42DC395B1D814D91005B893C /* View */,
+			);
+			path = "Setting(设置)";
+			sourceTree = "<group>";
+		};
+		42DC39591D814D91005B893C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		42DC395A1D814D91005B893C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		42DC395B1D814D91005B893C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		42DC39661D815AB2005B893C /* SearchDoctor */ = {
+			isa = PBXGroup;
+			children = (
+				42DC39671D815AB2005B893C /* Controller */,
+				42DC39681D815AB2005B893C /* Model */,
+				42DC39691D815AB2005B893C /* View */,
+			);
+			path = SearchDoctor;
+			sourceTree = "<group>";
+		};
+		42DC39671D815AB2005B893C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				42DC396A1D815AC5005B893C /* SearchDoctorViewController.swift */,
+				42DC396B1D815AC5005B893C /* SearchDoctorViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		42DC39681D815AB2005B893C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		42DC39691D815AB2005B893C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		606B657B7A7F72E14F3ADE8C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -762,16 +967,19 @@
 				42588B0B1D7D07A100C21ADB /* RankTableViewCell.xib in Resources */,
 				42588B591D7EA34100C21ADB /* ExpertTalkCell.xib in Resources */,
 				4246FD051D5B2A9A00CB9199 /* NewVersionViewController.xib in Resources */,
+				42DC39651D814EA2005B893C /* RegisterHelpViewController.xib in Resources */,
 				424C7B3E1D5C00EF00ED62CB /* OrderViewController.xib in Resources */,
 				4246FCC91D5B1F4200CB9199 /* Assets.xcassets in Resources */,
 				42588B1F1D7D728000C21ADB /* DoctorDetailController.xib in Resources */,
 				42588B811D7FAB0700C21ADB /* FindExpertController.xib in Resources */,
 				42588B291D7E483800C21ADB /* DoctorDetailFirstCell.xib in Resources */,
+				42DC394B1D810E86005B893C /* ProfileViewControllerCell.xib in Resources */,
 				42588B8E1D7FAB5B00C21ADB /* FindHospitalViewController.xib in Resources */,
+				42DC396D1D815AC5005B893C /* SearchDoctorViewController.xib in Resources */,
 				42588B601D7EA34100C21ADB /* HomeCarouselCell.xib in Resources */,
 				42588B171D7D457900C21ADB /* HospitalDoctorListViewController.xib in Resources */,
 				42588B5D1D7EA34100C21ADB /* HotSectionCollectionCell.xib in Resources */,
-				424C7B361D5C00D500ED62CB /* ProfileViewController.xib in Resources */,
+				42DC395F1D814DAC005B893C /* ProfileViewController.xib in Resources */,
 				42588B921D7FAB5B00C21ADB /* FindHospitalCell.xib in Resources */,
 				42588B5B1D7EA34100C21ADB /* HotSectionCell.xib in Resources */,
 				42588B0F1D7D07E200C21ADB /* HospitalDoctorListCell.xib in Resources */,
@@ -866,6 +1074,7 @@
 				42588B0A1D7D07A100C21ADB /* RankTableViewCell.swift in Sources */,
 				42588B231D7D749B00C21ADB /* DoctorDetailParam.swift in Sources */,
 				42588B031D7D07A100C21ADB /* RankViewController.swift in Sources */,
+				42DC396C1D815AC5005B893C /* SearchDoctorViewController.swift in Sources */,
 				4246FCFB1D5B261E00CB9199 /* Common.swift in Sources */,
 				42588B091D7D07A100C21ADB /* RankHttpTool.swift in Sources */,
 				42309F921D62AA0F005F79BD /* CustomAFHTTPSessionManager.swift in Sources */,
@@ -874,8 +1083,10 @@
 				42588B071D7D07A100C21ADB /* HospitalDoctorListModel.swift in Sources */,
 				42588B281D7E483800C21ADB /* DoctorDetailFirstCell.swift in Sources */,
 				42588B911D7FAB5B00C21ADB /* FindHospitalCell.swift in Sources */,
+				42DC395E1D814DAC005B893C /* ProfileViewController.swift in Sources */,
 				42588B961D7FADAA00C21ADB /* FindExpertTool.swift in Sources */,
 				4246FCFD1D5B27CE00CB9199 /* NewVersionTool.swift in Sources */,
+				42DC39641D814EA2005B893C /* RegisterHelpViewController.swift in Sources */,
 				424C7B421D5C0FB100ED62CB /* BaseViewController.swift in Sources */,
 				4246FCF91D5B25AE00CB9199 /* MainNavigationController.swift in Sources */,
 				42588B901D7FAB5B00C21ADB /* FindHospitalTool.swift in Sources */,
@@ -887,10 +1098,10 @@
 				42BB86571D79224400F583CB /* NSString+Hash.m in Sources */,
 				42588B5F1D7EA34100C21ADB /* HomeCarouselCell.swift in Sources */,
 				42588B8F1D7FAB5B00C21ADB /* FindHospitalModel.swift in Sources */,
+				42DC39471D810B1C005B893C /* ProfileModel.swift in Sources */,
 				42DF9C4F1D5DC4E2007550B2 /* bridge.m in Sources */,
 				424C7B401D5C028500ED62CB /* UIColor+Category.swift in Sources */,
 				42588B0E1D7D07E200C21ADB /* HospitalDoctorListCell.swift in Sources */,
-				424C7B351D5C00D500ED62CB /* ProfileViewController.swift in Sources */,
 				42588B531D7EA34100C21ADB /* HomeViewController.swift in Sources */,
 				42588B5A1D7EA34100C21ADB /* HotSectionCell.swift in Sources */,
 				42309FDA1D62EF61005F79BD /* UIBarButtonItem+Category.swift in Sources */,
@@ -899,6 +1110,7 @@
 				42588B621D7EA34100C21ADB /* HotSectionExpertCell.swift in Sources */,
 				42588B161D7D457900C21ADB /* HospitalDoctorListViewController.swift in Sources */,
 				4246FCC21D5B1F4200CB9199 /* AppDelegate.swift in Sources */,
+				42DC394A1D810E86005B893C /* ProfileViewControllerCell.swift in Sources */,
 				42588B661D7EA34100C21ADB /* HotSectionExpertCollectionCellModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

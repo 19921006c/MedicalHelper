@@ -51,6 +51,12 @@ class FindHospitalViewController: BaseViewController {
         view.backgroundColor = UIColor.whiteColor()
         tableView?.delegate = self
         tableView?.dataSource = self
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem.itemWithNorImageName("Search", highlightedImageName: "Search02", target: self, action: Selector("rightDown"))
+    }
+    func rightDown(){
+        let vc = SearchDoctorViewController(controllerName: "SearchDoctorViewController")
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     //MARK: - lazy

@@ -67,7 +67,7 @@ class HomeTableViewHeaderView: UITableViewHeaderFooterView {
 
 extension HomeTableViewHeaderView: UICollectionViewDataSource,UICollectionViewDelegate,HomeTableViewHeaderViewCellDelegate{
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return  4
+        return  2
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -90,13 +90,13 @@ private class HomeTableViewHeaderViewCellLayout: UICollectionViewFlowLayout {
     override init() {
         super.init()
         
-        let margin: CGFloat = 25
+        let margin: CGFloat = (kScreenWidth - itemWidth * 2) / 3
         
         scrollDirection = UICollectionViewScrollDirection.Horizontal
         minimumLineSpacing = margin
 //        minimumInteritemSpacing = 20
         itemSize = CGSize(width: itemWidth, height: 95)
-        headerReferenceSize = CGSize(width: (kScreenWidth - itemWidth * 4 - margin * 3) * 0.5, height: 115)
+        headerReferenceSize = CGSize(width: margin, height: 115)
 //        footerReferenceSize = CGSize(width: 10, height: 115)
     }
     
@@ -160,7 +160,7 @@ class HomeTableViewHeaderViewCell: UICollectionViewCell{
     }()
     
     private lazy var titleArray: [String] = {
-        let array = ["找医院","找专家","疾病挂号","科室挂号"]
+        let array = ["找医院","找专家"]
         return array
     }()
 }
